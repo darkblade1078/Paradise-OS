@@ -1,0 +1,260 @@
+1<?xml version="1.0" encoding="utf-8"?>
+2<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+3    package="com.UnityTechnologies.com.unity.template.urpblank"
+4    android:installLocation="auto"
+5    android:versionCode="1"
+6    android:versionName="0.1.0" >
+7
+8    <uses-sdk
+9        android:minSdkVersion="32"
+9-->C:\Users\gamin\Documents\GitHub\VXR4\VXR4\Library\Bee\Android\Prj\IL2CPP\Gradle\launcher\src\main\AndroidManifest.xml
+10        android:targetSdkVersion="32" />
+10-->C:\Users\gamin\Documents\GitHub\VXR4\VXR4\Library\Bee\Android\Prj\IL2CPP\Gradle\launcher\src\main\AndroidManifest.xml
+11
+12    <supports-screens
+12-->C:\Users\gamin\Documents\GitHub\VXR4\VXR4\Library\Bee\Android\Prj\IL2CPP\Gradle\launcher\src\main\AndroidManifest.xml:4:3-163
+13        android:anyDensity="true"
+13-->C:\Users\gamin\Documents\GitHub\VXR4\VXR4\Library\Bee\Android\Prj\IL2CPP\Gradle\launcher\src\main\AndroidManifest.xml:4:135-160
+14        android:largeScreens="true"
+14-->C:\Users\gamin\Documents\GitHub\VXR4\VXR4\Library\Bee\Android\Prj\IL2CPP\Gradle\launcher\src\main\AndroidManifest.xml:4:78-105
+15        android:normalScreens="true"
+15-->C:\Users\gamin\Documents\GitHub\VXR4\VXR4\Library\Bee\Android\Prj\IL2CPP\Gradle\launcher\src\main\AndroidManifest.xml:4:49-77
+16        android:smallScreens="true"
+16-->C:\Users\gamin\Documents\GitHub\VXR4\VXR4\Library\Bee\Android\Prj\IL2CPP\Gradle\launcher\src\main\AndroidManifest.xml:4:21-48
+17        android:xlargeScreens="true" />
+17-->C:\Users\gamin\Documents\GitHub\VXR4\VXR4\Library\Bee\Android\Prj\IL2CPP\Gradle\launcher\src\main\AndroidManifest.xml:4:106-134
+18
+19    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+19-->[:unityLibrary] C:\Users\gamin\Documents\GitHub\VXR4\VXR4\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\build\intermediates\merged_manifest\release\AndroidManifest.xml:9:5-71
+19-->[:unityLibrary] C:\Users\gamin\Documents\GitHub\VXR4\VXR4\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\build\intermediates\merged_manifest\release\AndroidManifest.xml:9:22-68
+20    <uses-permission android:name="android.permission.MODIFY_AUDIO_SETTINGS" />
+20-->[:unityLibrary] C:\Users\gamin\Documents\GitHub\VXR4\VXR4\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\build\intermediates\merged_manifest\release\AndroidManifest.xml:10:5-80
+20-->[:unityLibrary] C:\Users\gamin\Documents\GitHub\VXR4\VXR4\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\build\intermediates\merged_manifest\release\AndroidManifest.xml:10:22-77
+21    <uses-permission android:name="android.permission.INTERNET" />
+21-->[:unityLibrary] C:\Users\gamin\Documents\GitHub\VXR4\VXR4\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\build\intermediates\merged_manifest\release\AndroidManifest.xml:11:5-67
+21-->[:unityLibrary] C:\Users\gamin\Documents\GitHub\VXR4\VXR4\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\build\intermediates\merged_manifest\release\AndroidManifest.xml:11:22-64
+22    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+22-->[:unityLibrary] C:\Users\gamin\Documents\GitHub\VXR4\VXR4\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\build\intermediates\merged_manifest\release\AndroidManifest.xml:12:5-79
+22-->[:unityLibrary] C:\Users\gamin\Documents\GitHub\VXR4\VXR4\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\build\intermediates\merged_manifest\release\AndroidManifest.xml:12:22-76
+23
+24    <uses-feature
+24-->[:unityLibrary] C:\Users\gamin\Documents\GitHub\VXR4\VXR4\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\build\intermediates\merged_manifest\release\AndroidManifest.xml:14:5-17:31
+25        android:name="android.hardware.vr.headtracking"
+25-->[:unityLibrary] C:\Users\gamin\Documents\GitHub\VXR4\VXR4\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\build\intermediates\merged_manifest\release\AndroidManifest.xml:15:9-56
+26        android:required="true"
+26-->[:unityLibrary] C:\Users\gamin\Documents\GitHub\VXR4\VXR4\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\build\intermediates\merged_manifest\release\AndroidManifest.xml:16:9-32
+27        android:version="1" />
+27-->[:unityLibrary] C:\Users\gamin\Documents\GitHub\VXR4\VXR4\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\build\intermediates\merged_manifest\release\AndroidManifest.xml:17:9-28
+28    <uses-feature android:glEsVersion="0x00030000" />
+28-->[:unityLibrary] C:\Users\gamin\Documents\GitHub\VXR4\VXR4\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\build\intermediates\merged_manifest\release\AndroidManifest.xml:18:5-54
+28-->[:unityLibrary] C:\Users\gamin\Documents\GitHub\VXR4\VXR4\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\build\intermediates\merged_manifest\release\AndroidManifest.xml:18:19-51
+29    <uses-feature
+29-->[:unityLibrary] C:\Users\gamin\Documents\GitHub\VXR4\VXR4\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\build\intermediates\merged_manifest\release\AndroidManifest.xml:19:5-21:36
+30        android:name="android.hardware.vulkan.version"
+30-->[:unityLibrary] C:\Users\gamin\Documents\GitHub\VXR4\VXR4\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\build\intermediates\merged_manifest\release\AndroidManifest.xml:20:9-55
+31        android:required="false" />
+31-->[:unityLibrary] C:\Users\gamin\Documents\GitHub\VXR4\VXR4\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\build\intermediates\merged_manifest\release\AndroidManifest.xml:21:9-33
+32    <uses-feature
+32-->[:unityLibrary] C:\Users\gamin\Documents\GitHub\VXR4\VXR4\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\build\intermediates\merged_manifest\release\AndroidManifest.xml:22:5-24:36
+33        android:name="android.hardware.type.pc"
+33-->[:unityLibrary] C:\Users\gamin\Documents\GitHub\VXR4\VXR4\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\build\intermediates\merged_manifest\release\AndroidManifest.xml:23:9-48
+34        android:required="false" />
+34-->[:unityLibrary] C:\Users\gamin\Documents\GitHub\VXR4\VXR4\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\build\intermediates\merged_manifest\release\AndroidManifest.xml:24:9-33
+35    <uses-feature
+35-->[:unityLibrary] C:\Users\gamin\Documents\GitHub\VXR4\VXR4\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\build\intermediates\merged_manifest\release\AndroidManifest.xml:25:5-27:36
+36        android:name="android.hardware.microphone"
+36-->[:unityLibrary] C:\Users\gamin\Documents\GitHub\VXR4\VXR4\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\build\intermediates\merged_manifest\release\AndroidManifest.xml:26:9-51
+37        android:required="false" />
+37-->[:unityLibrary] C:\Users\gamin\Documents\GitHub\VXR4\VXR4\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\build\intermediates\merged_manifest\release\AndroidManifest.xml:27:9-33
+38    <uses-feature
+38-->[:unityLibrary] C:\Users\gamin\Documents\GitHub\VXR4\VXR4\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\build\intermediates\merged_manifest\release\AndroidManifest.xml:28:5-30:36
+39        android:name="android.hardware.touchscreen"
+39-->[:unityLibrary] C:\Users\gamin\Documents\GitHub\VXR4\VXR4\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\build\intermediates\merged_manifest\release\AndroidManifest.xml:29:9-52
+40        android:required="false" />
+40-->[:unityLibrary] C:\Users\gamin\Documents\GitHub\VXR4\VXR4\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\build\intermediates\merged_manifest\release\AndroidManifest.xml:30:9-33
+41    <uses-feature
+41-->[:unityLibrary] C:\Users\gamin\Documents\GitHub\VXR4\VXR4\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\build\intermediates\merged_manifest\release\AndroidManifest.xml:31:5-33:36
+42        android:name="android.hardware.touchscreen.multitouch"
+42-->[:unityLibrary] C:\Users\gamin\Documents\GitHub\VXR4\VXR4\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\build\intermediates\merged_manifest\release\AndroidManifest.xml:32:9-63
+43        android:required="false" />
+43-->[:unityLibrary] C:\Users\gamin\Documents\GitHub\VXR4\VXR4\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\build\intermediates\merged_manifest\release\AndroidManifest.xml:33:9-33
+44    <uses-feature
+44-->[:unityLibrary] C:\Users\gamin\Documents\GitHub\VXR4\VXR4\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\build\intermediates\merged_manifest\release\AndroidManifest.xml:34:5-36:36
+45        android:name="android.hardware.touchscreen.multitouch.distinct"
+45-->[:unityLibrary] C:\Users\gamin\Documents\GitHub\VXR4\VXR4\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\build\intermediates\merged_manifest\release\AndroidManifest.xml:35:9-72
+46        android:required="false" />
+46-->[:unityLibrary] C:\Users\gamin\Documents\GitHub\VXR4\VXR4\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\build\intermediates\merged_manifest\release\AndroidManifest.xml:36:9-33
+47    <uses-feature
+47-->[:unityLibrary] C:\Users\gamin\Documents\GitHub\VXR4\VXR4\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\build\intermediates\merged_manifest\release\AndroidManifest.xml:37:5-39:36
+48        android:name="oculus.software.handtracking"
+48-->[:unityLibrary] C:\Users\gamin\Documents\GitHub\VXR4\VXR4\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\build\intermediates\merged_manifest\release\AndroidManifest.xml:38:9-52
+49        android:required="false" />
+49-->[:unityLibrary] C:\Users\gamin\Documents\GitHub\VXR4\VXR4\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\build\intermediates\merged_manifest\release\AndroidManifest.xml:39:9-33
+50
+51    <uses-permission android:name="com.oculus.permission.HAND_TRACKING" />
+51-->[:unityLibrary] C:\Users\gamin\Documents\GitHub\VXR4\VXR4\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\build\intermediates\merged_manifest\release\AndroidManifest.xml:41:5-75
+51-->[:unityLibrary] C:\Users\gamin\Documents\GitHub\VXR4\VXR4\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\build\intermediates\merged_manifest\release\AndroidManifest.xml:41:22-72
+52    <uses-permission android:name="com.oculus.permission.USE_ANCHOR_API" />
+52-->[:unityLibrary] C:\Users\gamin\Documents\GitHub\VXR4\VXR4\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\build\intermediates\merged_manifest\release\AndroidManifest.xml:42:5-76
+52-->[:unityLibrary] C:\Users\gamin\Documents\GitHub\VXR4\VXR4\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\build\intermediates\merged_manifest\release\AndroidManifest.xml:42:22-73
+53    <uses-permission android:name="com.oculus.permission.USE_SCENE" />
+53-->[:unityLibrary] C:\Users\gamin\Documents\GitHub\VXR4\VXR4\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\build\intermediates\merged_manifest\release\AndroidManifest.xml:43:5-71
+53-->[:unityLibrary] C:\Users\gamin\Documents\GitHub\VXR4\VXR4\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\build\intermediates\merged_manifest\release\AndroidManifest.xml:43:22-68
+54    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+55    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+56    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+57
+58    <application
+58-->C:\Users\gamin\Documents\GitHub\VXR4\VXR4\Library\Bee\Android\Prj\IL2CPP\Gradle\launcher\src\main\AndroidManifest.xml:3:3-83
+59        android:allowBackup="false"
+59-->[:unityLibrary] C:\Users\gamin\Documents\GitHub\VXR4\VXR4\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\build\intermediates\merged_manifest\release\AndroidManifest.xml:46:9-36
+60        android:extractNativeLibs="true"
+60-->[:unityLibrary] C:\Users\gamin\Documents\GitHub\VXR4\VXR4\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\build\intermediates\merged_manifest\release\AndroidManifest.xml:47:9-41
+61        android:icon="@mipmap/app_icon"
+61-->C:\Users\gamin\Documents\GitHub\VXR4\VXR4\Library\Bee\Android\Prj\IL2CPP\Gradle\launcher\src\main\AndroidManifest.xml:3:49-80
+62        android:label="@string/app_name"
+62-->C:\Users\gamin\Documents\GitHub\VXR4\VXR4\Library\Bee\Android\Prj\IL2CPP\Gradle\launcher\src\main\AndroidManifest.xml:3:16-48
+63        android:networkSecurityConfig="@xml/network_sec_config" >
+63-->[:unityLibrary] C:\Users\gamin\Documents\GitHub\VXR4\VXR4\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\build\intermediates\merged_manifest\release\AndroidManifest.xml:50:9-64
+64        <meta-data
+64-->[:unityLibrary] C:\Users\gamin\Documents\GitHub\VXR4\VXR4\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\build\intermediates\merged_manifest\release\AndroidManifest.xml:51:9-53:37
+65            android:name="unityplayer.SkipPermissionsDialog"
+65-->[:unityLibrary] C:\Users\gamin\Documents\GitHub\VXR4\VXR4\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\build\intermediates\merged_manifest\release\AndroidManifest.xml:52:13-61
+66            android:value="false" />
+66-->[:unityLibrary] C:\Users\gamin\Documents\GitHub\VXR4\VXR4\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\build\intermediates\merged_manifest\release\AndroidManifest.xml:53:13-34
+67        <meta-data
+67-->[:unityLibrary] C:\Users\gamin\Documents\GitHub\VXR4\VXR4\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\build\intermediates\merged_manifest\release\AndroidManifest.xml:54:9-56:37
+68            android:name="com.oculus.ossplash.background"
+68-->[:unityLibrary] C:\Users\gamin\Documents\GitHub\VXR4\VXR4\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\build\intermediates\merged_manifest\release\AndroidManifest.xml:55:13-58
+69            android:value="black" />
+69-->[:unityLibrary] C:\Users\gamin\Documents\GitHub\VXR4\VXR4\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\build\intermediates\merged_manifest\release\AndroidManifest.xml:56:13-34
+70        <meta-data
+70-->[:unityLibrary] C:\Users\gamin\Documents\GitHub\VXR4\VXR4\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\build\intermediates\merged_manifest\release\AndroidManifest.xml:57:9-59:68
+71            android:name="com.oculus.telemetry.project_guid"
+71-->[:unityLibrary] C:\Users\gamin\Documents\GitHub\VXR4\VXR4\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\build\intermediates\merged_manifest\release\AndroidManifest.xml:58:13-61
+72            android:value="59cf2235-d406-4be5-9e53-93bcd63bef26" />
+72-->[:unityLibrary] C:\Users\gamin\Documents\GitHub\VXR4\VXR4\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\build\intermediates\merged_manifest\release\AndroidManifest.xml:59:13-65
+73        <meta-data
+73-->[:unityLibrary] C:\Users\gamin\Documents\GitHub\VXR4\VXR4\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\build\intermediates\merged_manifest\release\AndroidManifest.xml:60:9-62:62
+74            android:name="com.oculus.supportedDevices"
+74-->[:unityLibrary] C:\Users\gamin\Documents\GitHub\VXR4\VXR4\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\build\intermediates\merged_manifest\release\AndroidManifest.xml:61:13-55
+75            android:value="quest2|questpro|quest3|quest3s" />
+75-->[:unityLibrary] C:\Users\gamin\Documents\GitHub\VXR4\VXR4\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\build\intermediates\merged_manifest\release\AndroidManifest.xml:62:13-59
+76        <meta-data
+76-->[:unityLibrary] C:\Users\gamin\Documents\GitHub\VXR4\VXR4\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\build\intermediates\merged_manifest\release\AndroidManifest.xml:63:9-65:33
+77            android:name="unity.splash-mode"
+77-->[:unityLibrary] C:\Users\gamin\Documents\GitHub\VXR4\VXR4\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\build\intermediates\merged_manifest\release\AndroidManifest.xml:64:13-45
+78            android:value="0" />
+78-->[:unityLibrary] C:\Users\gamin\Documents\GitHub\VXR4\VXR4\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\build\intermediates\merged_manifest\release\AndroidManifest.xml:65:13-30
+79        <meta-data
+79-->[:unityLibrary] C:\Users\gamin\Documents\GitHub\VXR4\VXR4\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\build\intermediates\merged_manifest\release\AndroidManifest.xml:66:9-68:36
+80            android:name="unity.splash-enable"
+80-->[:unityLibrary] C:\Users\gamin\Documents\GitHub\VXR4\VXR4\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\build\intermediates\merged_manifest\release\AndroidManifest.xml:67:13-47
+81            android:value="True" />
+81-->[:unityLibrary] C:\Users\gamin\Documents\GitHub\VXR4\VXR4\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\build\intermediates\merged_manifest\release\AndroidManifest.xml:68:13-33
+82        <meta-data
+82-->[:unityLibrary] C:\Users\gamin\Documents\GitHub\VXR4\VXR4\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\build\intermediates\merged_manifest\release\AndroidManifest.xml:69:9-71:36
+83            android:name="unity.launch-fullscreen"
+83-->[:unityLibrary] C:\Users\gamin\Documents\GitHub\VXR4\VXR4\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\build\intermediates\merged_manifest\release\AndroidManifest.xml:70:13-51
+84            android:value="True" />
+84-->[:unityLibrary] C:\Users\gamin\Documents\GitHub\VXR4\VXR4\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\build\intermediates\merged_manifest\release\AndroidManifest.xml:71:13-33
+85        <meta-data
+85-->[:unityLibrary] C:\Users\gamin\Documents\GitHub\VXR4\VXR4\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\build\intermediates\merged_manifest\release\AndroidManifest.xml:72:9-74:36
+86            android:name="unity.render-outside-safearea"
+86-->[:unityLibrary] C:\Users\gamin\Documents\GitHub\VXR4\VXR4\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\build\intermediates\merged_manifest\release\AndroidManifest.xml:73:13-57
+87            android:value="True" />
+87-->[:unityLibrary] C:\Users\gamin\Documents\GitHub\VXR4\VXR4\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\build\intermediates\merged_manifest\release\AndroidManifest.xml:74:13-33
+88        <meta-data
+88-->[:unityLibrary] C:\Users\gamin\Documents\GitHub\VXR4\VXR4\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\build\intermediates\merged_manifest\release\AndroidManifest.xml:75:9-77:50
+89            android:name="notch.config"
+89-->[:unityLibrary] C:\Users\gamin\Documents\GitHub\VXR4\VXR4\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\build\intermediates\merged_manifest\release\AndroidManifest.xml:76:13-40
+90            android:value="portrait|landscape" />
+90-->[:unityLibrary] C:\Users\gamin\Documents\GitHub\VXR4\VXR4\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\build\intermediates\merged_manifest\release\AndroidManifest.xml:77:13-47
+91        <meta-data
+91-->[:unityLibrary] C:\Users\gamin\Documents\GitHub\VXR4\VXR4\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\build\intermediates\merged_manifest\release\AndroidManifest.xml:78:9-80:36
+92            android:name="unity.auto-report-fully-drawn"
+92-->[:unityLibrary] C:\Users\gamin\Documents\GitHub\VXR4\VXR4\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\build\intermediates\merged_manifest\release\AndroidManifest.xml:79:13-57
+93            android:value="true" />
+93-->[:unityLibrary] C:\Users\gamin\Documents\GitHub\VXR4\VXR4\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\build\intermediates\merged_manifest\release\AndroidManifest.xml:80:13-33
+94
+95        <activity
+95-->[:unityLibrary] C:\Users\gamin\Documents\GitHub\VXR4\VXR4\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\build\intermediates\merged_manifest\release\AndroidManifest.xml:82:9-105:20
+96            android:name="com.unity3d.player.UnityPlayerActivity"
+96-->[:unityLibrary] C:\Users\gamin\Documents\GitHub\VXR4\VXR4\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\build\intermediates\merged_manifest\release\AndroidManifest.xml:83:13-66
+97            android:configChanges="keyboard|keyboardHidden|navigation|orientation|screenLayout|screenSize|uiMode|density"
+97-->[:unityLibrary] C:\Users\gamin\Documents\GitHub\VXR4\VXR4\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\build\intermediates\merged_manifest\release\AndroidManifest.xml:84:13-122
+98            android:excludeFromRecents="true"
+98-->[:unityLibrary] C:\Users\gamin\Documents\GitHub\VXR4\VXR4\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\build\intermediates\merged_manifest\release\AndroidManifest.xml:85:13-46
+99            android:exported="true"
+99-->[:unityLibrary] C:\Users\gamin\Documents\GitHub\VXR4\VXR4\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\build\intermediates\merged_manifest\release\AndroidManifest.xml:86:13-36
+100            android:hardwareAccelerated="false"
+100-->[:unityLibrary] C:\Users\gamin\Documents\GitHub\VXR4\VXR4\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\build\intermediates\merged_manifest\release\AndroidManifest.xml:87:13-48
+101            android:launchMode="singleTask"
+101-->[:unityLibrary] C:\Users\gamin\Documents\GitHub\VXR4\VXR4\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\build\intermediates\merged_manifest\release\AndroidManifest.xml:88:13-44
+102            android:resizeableActivity="false"
+102-->[:unityLibrary] C:\Users\gamin\Documents\GitHub\VXR4\VXR4\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\build\intermediates\merged_manifest\release\AndroidManifest.xml:89:13-47
+103            android:screenOrientation="landscape"
+103-->[:unityLibrary] C:\Users\gamin\Documents\GitHub\VXR4\VXR4\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\build\intermediates\merged_manifest\release\AndroidManifest.xml:90:13-50
+104            android:theme="@android:style/Theme.Black.NoTitleBar.Fullscreen" >
+104-->[:unityLibrary] C:\Users\gamin\Documents\GitHub\VXR4\VXR4\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\build\intermediates\merged_manifest\release\AndroidManifest.xml:91:13-77
+105            <intent-filter>
+105-->[:unityLibrary] C:\Users\gamin\Documents\GitHub\VXR4\VXR4\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\build\intermediates\merged_manifest\release\AndroidManifest.xml:92:13-97:29
+106                <category android:name="android.intent.category.LAUNCHER" />
+106-->[:unityLibrary] C:\Users\gamin\Documents\GitHub\VXR4\VXR4\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\build\intermediates\merged_manifest\release\AndroidManifest.xml:93:17-77
+106-->[:unityLibrary] C:\Users\gamin\Documents\GitHub\VXR4\VXR4\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\build\intermediates\merged_manifest\release\AndroidManifest.xml:93:27-74
+107                <category android:name="com.oculus.intent.category.VR" />
+107-->[:unityLibrary] C:\Users\gamin\Documents\GitHub\VXR4\VXR4\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\build\intermediates\merged_manifest\release\AndroidManifest.xml:94:17-74
+107-->[:unityLibrary] C:\Users\gamin\Documents\GitHub\VXR4\VXR4\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\build\intermediates\merged_manifest\release\AndroidManifest.xml:94:27-71
+108
+109                <action android:name="android.intent.action.MAIN" />
+109-->[:unityLibrary] C:\Users\gamin\Documents\GitHub\VXR4\VXR4\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\build\intermediates\merged_manifest\release\AndroidManifest.xml:96:17-69
+109-->[:unityLibrary] C:\Users\gamin\Documents\GitHub\VXR4\VXR4\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\build\intermediates\merged_manifest\release\AndroidManifest.xml:96:25-66
+110            </intent-filter>
+111
+112            <meta-data
+112-->[:unityLibrary] C:\Users\gamin\Documents\GitHub\VXR4\VXR4\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\build\intermediates\merged_manifest\release\AndroidManifest.xml:99:13-101:40
+113                android:name="com.oculus.vr.focusaware"
+113-->[:unityLibrary] C:\Users\gamin\Documents\GitHub\VXR4\VXR4\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\build\intermediates\merged_manifest\release\AndroidManifest.xml:100:17-56
+114                android:value="true" />
+114-->[:unityLibrary] C:\Users\gamin\Documents\GitHub\VXR4\VXR4\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\build\intermediates\merged_manifest\release\AndroidManifest.xml:101:17-37
+115            <meta-data
+115-->[:unityLibrary] C:\Users\gamin\Documents\GitHub\VXR4\VXR4\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\build\intermediates\merged_manifest\release\AndroidManifest.xml:102:13-104:40
+116                android:name="notch_support"
+116-->[:unityLibrary] C:\Users\gamin\Documents\GitHub\VXR4\VXR4\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\build\intermediates\merged_manifest\release\AndroidManifest.xml:103:17-45
+117                android:value="true" />
+117-->[:unityLibrary] C:\Users\gamin\Documents\GitHub\VXR4\VXR4\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\build\intermediates\merged_manifest\release\AndroidManifest.xml:104:17-37
+118        </activity>
+119
+120        <meta-data
+120-->[:unityLibrary] C:\Users\gamin\Documents\GitHub\VXR4\VXR4\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\build\intermediates\merged_manifest\release\AndroidManifest.xml:107:9-109:39
+121            android:name="com.samsung.android.vr.application.mode"
+121-->[:unityLibrary] C:\Users\gamin\Documents\GitHub\VXR4\VXR4\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\build\intermediates\merged_manifest\release\AndroidManifest.xml:108:13-67
+122            android:value="vr_only" />
+122-->[:unityLibrary] C:\Users\gamin\Documents\GitHub\VXR4\VXR4\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\build\intermediates\merged_manifest\release\AndroidManifest.xml:109:13-36
+123        <meta-data
+123-->[:unityLibrary] C:\Users\gamin\Documents\GitHub\VXR4\VXR4\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\build\intermediates\merged_manifest\release\AndroidManifest.xml:110:9-112:36
+124            android:name="com.unity.xr.oculus.LowOverheadMode"
+124-->[:unityLibrary] C:\Users\gamin\Documents\GitHub\VXR4\VXR4\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\build\intermediates\merged_manifest\release\AndroidManifest.xml:111:13-63
+125            android:value="true" />
+125-->[:unityLibrary] C:\Users\gamin\Documents\GitHub\VXR4\VXR4\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\build\intermediates\merged_manifest\release\AndroidManifest.xml:112:13-33
+126        <meta-data
+126-->[:unityLibrary] C:\Users\gamin\Documents\GitHub\VXR4\VXR4\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\build\intermediates\merged_manifest\release\AndroidManifest.xml:113:9-115:37
+127            android:name="com.unity.xr.oculus.LateLatching"
+127-->[:unityLibrary] C:\Users\gamin\Documents\GitHub\VXR4\VXR4\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\build\intermediates\merged_manifest\release\AndroidManifest.xml:114:13-60
+128            android:value="false" />
+128-->[:unityLibrary] C:\Users\gamin\Documents\GitHub\VXR4\VXR4\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\build\intermediates\merged_manifest\release\AndroidManifest.xml:115:13-34
+129        <meta-data
+129-->[:unityLibrary] C:\Users\gamin\Documents\GitHub\VXR4\VXR4\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\build\intermediates\merged_manifest\release\AndroidManifest.xml:116:9-118:37
+130            android:name="com.unity.xr.oculus.LateLatchingDebug"
+130-->[:unityLibrary] C:\Users\gamin\Documents\GitHub\VXR4\VXR4\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\build\intermediates\merged_manifest\release\AndroidManifest.xml:117:13-65
+131            android:value="false" />
+131-->[:unityLibrary] C:\Users\gamin\Documents\GitHub\VXR4\VXR4\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\build\intermediates\merged_manifest\release\AndroidManifest.xml:118:13-34
+132        <meta-data
+132-->[:unityLibrary] C:\Users\gamin\Documents\GitHub\VXR4\VXR4\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\build\intermediates\merged_manifest\release\AndroidManifest.xml:119:9-121:36
+133            android:name="com.oculus.handtracking.frequency"
+133-->[:unityLibrary] C:\Users\gamin\Documents\GitHub\VXR4\VXR4\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\build\intermediates\merged_manifest\release\AndroidManifest.xml:120:13-61
+134            android:value="HIGH" />
+134-->[:unityLibrary] C:\Users\gamin\Documents\GitHub\VXR4\VXR4\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\build\intermediates\merged_manifest\release\AndroidManifest.xml:121:13-33
+135    </application>
+136
+137</manifest>

@@ -1,0 +1,92 @@
+﻿#include "pch-c.h"
+#ifndef _MSC_VER
+# include <alloca.h>
+#else
+# include <malloc.h>
+#endif
+
+
+#include "codegen/il2cpp-codegen-metadata.h"
+
+
+
+
+
+extern void QuestVoiceDialogue_Start_mBC8DBD63BE37F5A2C1A85337D1A60696B24E9A31 (void);
+extern void QuestVoiceDialogue_Update_mFF59A50B735B2D2C46C806556D64BA6AE929C7D7 (void);
+extern void QuestVoiceDialogue_ActivateVoice_m146ECF632831A0E067A6BE276FC75D5074672B23 (void);
+extern void QuestVoiceDialogue_DeactivateVoice_mF6A1A11A525CB6F55732F720A24BA0518EA7E32D (void);
+extern void QuestVoiceDialogue_OnStartListening_m7C37F8B772210FDAF25CFCB5DE99E42EBE96C9C7 (void);
+extern void QuestVoiceDialogue_OnStoppedListening_m3CE8E204D063CFA75C406AD750B1404448BCD477 (void);
+extern void QuestVoiceDialogue_OnPartialTranscription_mDEFBA4383C31067D62F61852C86633E9DDB58853 (void);
+extern void QuestVoiceDialogue_OnFullTranscription_m1CA64AA83A868353418EB95C153C56B150A40E65 (void);
+extern void QuestVoiceDialogue_OnError_mF161B6B6F110EDFC1E8D3828F5C0A7EE5A853993 (void);
+extern void QuestVoiceDialogue_ProcessDialogueInput_m518413BDC0546E86C4CB877A0A9EB449AD3321F4 (void);
+extern void QuestVoiceDialogue_OnDialogueChoice_mC0FF185CC606A9DF9B08F3D497B30114E05BA5B6 (void);
+extern void QuestVoiceDialogue_UpdateStatus_mAE180BBFAB8A53E11D7B74E70C8AE87E701C16C2 (void);
+extern void QuestVoiceDialogue_UpdateTranscription_m789DA65434F8CE322EF9629004F4105FA8810F01 (void);
+extern void QuestVoiceDialogue_OnDestroy_mD2D0B43A271F26C86188AEDAD017C64957BE9923 (void);
+extern void QuestVoiceDialogue__ctor_m26319A76059EA7CF8735A12D10F6FE992D00272E (void);
+extern void UnitySourceGeneratedAssemblyMonoScriptTypes_v1_Get_mBEB95BEB954BB63E9710BBC7AD5E78C4CB0A0033 (void);
+extern void UnitySourceGeneratedAssemblyMonoScriptTypes_v1__ctor_mE70FB23ACC1EA12ABC948AA22C2E78B2D0AA39B1 (void);
+static Il2CppMethodPointer s_methodPointers[17] = 
+{
+	QuestVoiceDialogue_Start_mBC8DBD63BE37F5A2C1A85337D1A60696B24E9A31,
+	QuestVoiceDialogue_Update_mFF59A50B735B2D2C46C806556D64BA6AE929C7D7,
+	QuestVoiceDialogue_ActivateVoice_m146ECF632831A0E067A6BE276FC75D5074672B23,
+	QuestVoiceDialogue_DeactivateVoice_mF6A1A11A525CB6F55732F720A24BA0518EA7E32D,
+	QuestVoiceDialogue_OnStartListening_m7C37F8B772210FDAF25CFCB5DE99E42EBE96C9C7,
+	QuestVoiceDialogue_OnStoppedListening_m3CE8E204D063CFA75C406AD750B1404448BCD477,
+	QuestVoiceDialogue_OnPartialTranscription_mDEFBA4383C31067D62F61852C86633E9DDB58853,
+	QuestVoiceDialogue_OnFullTranscription_m1CA64AA83A868353418EB95C153C56B150A40E65,
+	QuestVoiceDialogue_OnError_mF161B6B6F110EDFC1E8D3828F5C0A7EE5A853993,
+	QuestVoiceDialogue_ProcessDialogueInput_m518413BDC0546E86C4CB877A0A9EB449AD3321F4,
+	QuestVoiceDialogue_OnDialogueChoice_mC0FF185CC606A9DF9B08F3D497B30114E05BA5B6,
+	QuestVoiceDialogue_UpdateStatus_mAE180BBFAB8A53E11D7B74E70C8AE87E701C16C2,
+	QuestVoiceDialogue_UpdateTranscription_m789DA65434F8CE322EF9629004F4105FA8810F01,
+	QuestVoiceDialogue_OnDestroy_mD2D0B43A271F26C86188AEDAD017C64957BE9923,
+	QuestVoiceDialogue__ctor_m26319A76059EA7CF8735A12D10F6FE992D00272E,
+	UnitySourceGeneratedAssemblyMonoScriptTypes_v1_Get_mBEB95BEB954BB63E9710BBC7AD5E78C4CB0A0033,
+	UnitySourceGeneratedAssemblyMonoScriptTypes_v1__ctor_mE70FB23ACC1EA12ABC948AA22C2E78B2D0AA39B1,
+};
+static const int32_t s_InvokerIndices[17] = 
+{
+	13297,
+	13297,
+	13297,
+	13297,
+	13297,
+	13297,
+	10469,
+	10469,
+	5811,
+	10469,
+	10469,
+	10469,
+	10469,
+	13297,
+	13297,
+	21206,
+	13297,
+};
+IL2CPP_EXTERN_C const Il2CppCodeGenModule g_AssemblyU2DCSharp_CodeGenModule;
+const Il2CppCodeGenModule g_AssemblyU2DCSharp_CodeGenModule = 
+{
+	"Assembly-CSharp.dll",
+	17,
+	s_methodPointers,
+	0,
+	NULL,
+	s_InvokerIndices,
+	0,
+	NULL,
+	0,
+	NULL,
+	0,
+	NULL,
+	NULL,
+	NULL,
+	NULL,
+	NULL,
+	NULL,
+};
