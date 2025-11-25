@@ -53,6 +53,7 @@ Payload for "WriteResponseFile Library/Bee/artifacts/rsp/6097564273297756792.rsp
 -a="C:\Users\gamin\Documents\GitHub\VXR4\VXR4\Library\ScriptAssemblies\Unity.RenderPipelines.Universal.Shaders.dll"
 -a="C:\Users\gamin\Documents\GitHub\VXR4\VXR4\Library\ScriptAssemblies\Unity.TextMeshPro.dll"
 -a="C:\Users\gamin\Documents\GitHub\VXR4\VXR4\Library\ScriptAssemblies\Unity.Timeline.dll"
+-a="C:\Users\gamin\Documents\GitHub\VXR4\VXR4\Library\ScriptAssemblies\Unity.VisualEffectGraph.Runtime.dll"
 -a="C:\Users\gamin\Documents\GitHub\VXR4\VXR4\Library\ScriptAssemblies\Unity.VisualScripting.Core.dll"
 -a="C:\Users\gamin\Documents\GitHub\VXR4\VXR4\Library\ScriptAssemblies\Unity.VisualScripting.Flow.dll"
 -a="C:\Users\gamin\Documents\GitHub\VXR4\VXR4\Library\ScriptAssemblies\Unity.VisualScripting.State.dll"

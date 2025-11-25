@@ -27,7 +27,7 @@
       "DisplayName": "Writing 6097564273297756792.rsp",
       "ActionType": "WriteFile",
       "PayloadOffset": 83,
-      "PayloadLength": 8940,
+      "PayloadLength": 9048,
       "PayloadDebugContentSnippet": "-a=\"C:\\Users\\gamin\\Documents\\G",
       "Inputs": [],
       "Outputs": [
@@ -95,6 +95,7 @@
         "Library/ScriptAssemblies/Unity.RenderPipelines.Universal.Shaders.dll",
         "Library/ScriptAssemblies/Unity.TextMeshPro.dll",
         "Library/ScriptAssemblies/Unity.Timeline.dll",
+        "Library/ScriptAssemblies/Unity.VisualEffectGraph.Runtime.dll",
         "Library/ScriptAssemblies/Unity.VisualScripting.Core.dll",
         "Library/ScriptAssemblies/Unity.VisualScripting.Flow.dll",
         "Library/ScriptAssemblies/Unity.VisualScripting.State.dll",
@@ -443,6 +444,9 @@
     },
     {
       "File": "Library/ScriptAssemblies/Unity.Timeline.dll"
+    },
+    {
+      "File": "Library/ScriptAssemblies/Unity.VisualEffectGraph.Runtime.dll"
     },
     {
       "File": "Library/ScriptAssemblies/Unity.VisualScripting.Core.dll"

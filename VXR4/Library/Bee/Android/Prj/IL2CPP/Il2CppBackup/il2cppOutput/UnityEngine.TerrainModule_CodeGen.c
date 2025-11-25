@@ -27,9 +27,12 @@ extern void TextureChangedCallback_Invoke_m1194A44102843272B51A70C302EBDBC821464
 extern void TerrainData_GetBoundaryValue_mA9217CC15BBC958C9F7071B96CE74769EFDC322E (void);
 extern void TerrainData__ctor_m1B68EB89248D5706C2528F47279812F824E27A2E (void);
 extern void TerrainData_Internal_Create_m79BF764CFF5F49D17E2BFC8B20F60B4CF70BE4E1 (void);
+extern void TerrainData_get_heightmapTexture_m26CB863455F0048CEA74741C71BF3021576FF8CE (void);
 extern void TerrainData_get_heightmapResolution_m39FE9A5C31A80B28021F8E2484EF5F2664798836 (void);
 extern void TerrainData_get_internalHeightmapResolution_m83C6A32499AAAAFDD57DF73BA460CBCF02F98118 (void);
+extern void TerrainData_get_heightmapScale_m4B6AB6495384109BA54955CA52B883A118015188 (void);
 extern void TerrainData_get_size_mCD3977F344B9DEBFF61DD537D03FEB9473838DA5 (void);
+extern void TerrainData_get_bounds_m9CE9B3BF067EA06A837AB98B5BC6C0C4669B5A32 (void);
 extern void TerrainData_GetHeights_m3E5C109E98E72A23E39B92F7DF48D87888B2D488 (void);
 extern void TerrainData_Internal_GetHeights_mEDF77233265AFA8901DE8FB61661385337B70810 (void);
 extern void TerrainData_get_treeInstances_mDAB68FD1F3677BD5CB122EA943493D5FC94B2147 (void);
@@ -38,7 +41,9 @@ extern void TerrainData_get_treePrototypes_m0A43789B50E554DACB5DF88C86DA23B89DB3
 extern void TerrainData_GetAlphamapResolutionInternal_m5C312434763B8F0BD8DE760ACF439DFEFAC2F3E5 (void);
 extern void TerrainData_get_users_m0C569F1AD5853CEBF3C572723A1CAD04AC8433C4 (void);
 extern void TerrainData__cctor_m525F8AF6DEDDACF640BD2D24767502121ED6D9B0 (void);
+extern void TerrainData_get_heightmapScale_Injected_m3F94935D94B0B8029E2145C33B023AB8677C39AB (void);
 extern void TerrainData_get_size_Injected_m0F56E87C4D7EDD1D84F038E4AF0F273D328CF661 (void);
+extern void TerrainData_get_bounds_Injected_mD98BEEB610CCB2688123B28111C35D3E6415BDE5 (void);
 extern void TreePrototype_get_prefab_mCE1630C35B09770D35B2ECA45B98D1CB6D5AC67C (void);
 extern void TreePrototype_get_bendFactor_mC78774070395FFBEF5588233ED4C40D253F2B087 (void);
 extern void TreePrototype_get_navMeshLod_m68F7C292A64B7560076E09BF0B3AB6D681886C6C (void);
@@ -65,7 +70,7 @@ extern void TerrainUtility_AutoConnect_m3E435D139BE402DC495248EDD1FF2C1E9377A897
 extern void U3CU3Ec__DisplayClass2_0__ctor_m4C022C4675BA4CFC7E7AAA5692979CDE6CD8E611 (void);
 extern void U3CU3Ec__DisplayClass2_1__ctor_mA329ED5B221AE8787EAEA1124A2A95675FDD1695 (void);
 extern void U3CU3Ec__DisplayClass2_1_U3CCollectTerrainsU3Eb__0_m57E871EB2399E5FB7DF78B3C9EBFBF152116AC2C (void);
-static Il2CppMethodPointer s_methodPointers[53] = 
+static Il2CppMethodPointer s_methodPointers[58] = 
 {
 	Terrain_get_terrainData_m3B6C1D89471A4E1C60FC19C168DB37A011B924FD,
 	Terrain_get_allowAutoConnect_m4E9CB87D130BB118517C5504C8FB4A5CC3AA91D7,
@@ -82,9 +87,12 @@ static Il2CppMethodPointer s_methodPointers[53] =
 	TerrainData_GetBoundaryValue_mA9217CC15BBC958C9F7071B96CE74769EFDC322E,
 	TerrainData__ctor_m1B68EB89248D5706C2528F47279812F824E27A2E,
 	TerrainData_Internal_Create_m79BF764CFF5F49D17E2BFC8B20F60B4CF70BE4E1,
+	TerrainData_get_heightmapTexture_m26CB863455F0048CEA74741C71BF3021576FF8CE,
 	TerrainData_get_heightmapResolution_m39FE9A5C31A80B28021F8E2484EF5F2664798836,
 	TerrainData_get_internalHeightmapResolution_m83C6A32499AAAAFDD57DF73BA460CBCF02F98118,
+	TerrainData_get_heightmapScale_m4B6AB6495384109BA54955CA52B883A118015188,
 	TerrainData_get_size_mCD3977F344B9DEBFF61DD537D03FEB9473838DA5,
+	TerrainData_get_bounds_m9CE9B3BF067EA06A837AB98B5BC6C0C4669B5A32,
 	TerrainData_GetHeights_m3E5C109E98E72A23E39B92F7DF48D87888B2D488,
 	TerrainData_Internal_GetHeights_mEDF77233265AFA8901DE8FB61661385337B70810,
 	TerrainData_get_treeInstances_mDAB68FD1F3677BD5CB122EA943493D5FC94B2147,
@@ -93,7 +101,9 @@ static Il2CppMethodPointer s_methodPointers[53] =
 	TerrainData_GetAlphamapResolutionInternal_m5C312434763B8F0BD8DE760ACF439DFEFAC2F3E5,
 	TerrainData_get_users_m0C569F1AD5853CEBF3C572723A1CAD04AC8433C4,
 	TerrainData__cctor_m525F8AF6DEDDACF640BD2D24767502121ED6D9B0,
+	TerrainData_get_heightmapScale_Injected_m3F94935D94B0B8029E2145C33B023AB8677C39AB,
 	TerrainData_get_size_Injected_m0F56E87C4D7EDD1D84F038E4AF0F273D328CF661,
+	TerrainData_get_bounds_Injected_mD98BEEB610CCB2688123B28111C35D3E6415BDE5,
 	TreePrototype_get_prefab_mCE1630C35B09770D35B2ECA45B98D1CB6D5AC67C,
 	TreePrototype_get_bendFactor_mC78774070395FFBEF5588233ED4C40D253F2B087,
 	TreePrototype_get_navMeshLod_m68F7C292A64B7560076E09BF0B3AB6D681886C6C,
@@ -124,69 +134,74 @@ static Il2CppMethodPointer s_methodPointers[53] =
 extern void TerrainTileCoord__ctor_m6B6744655B9C3BA9B1A92076F07002B4B4EB899A_AdjustorThunk (void);
 static Il2CppTokenAdjustorThunkPair s_adjustorThunks[1] = 
 {
-	{ 0x06000023, TerrainTileCoord__ctor_m6B6744655B9C3BA9B1A92076F07002B4B4EB899A_AdjustorThunk },
+	{ 0x06000028, TerrainTileCoord__ctor_m6B6744655B9C3BA9B1A92076F07002B4B4EB899A_AdjustorThunk },
 };
-static const int32_t s_InvokerIndices[53] = 
+static const int32_t s_InvokerIndices[58] = 
 {
-	13131,
-	12974,
-	13068,
-	2188,
-	21137,
-	13297,
-	16704,
-	15560,
-	5805,
-	3051,
-	5805,
-	2193,
-	19564,
-	13297,
-	20173,
-	13068,
-	13068,
-	13286,
-	1841,
-	1841,
-	13131,
-	13131,
-	13131,
-	13197,
-	13131,
-	21187,
-	10290,
-	13131,
-	13197,
-	13068,
-	13297,
-	7681,
-	13068,
-	7681,
-	5344,
-	4500,
-	16176,
-	15387,
-	13131,
-	13297,
-	2936,
-	2401,
-	5344,
-	13068,
-	13297,
-	7681,
-	21104,
-	21187,
-	19755,
-	21187,
-	13297,
-	13297,
-	7681,
+	13344,
+	13185,
+	13280,
+	2248,
+	21522,
+	13515,
+	16993,
+	15814,
+	5937,
+	3127,
+	5937,
+	2253,
+	19922,
+	13515,
+	20554,
+	13344,
+	13280,
+	13280,
+	13503,
+	13503,
+	13183,
+	1893,
+	1893,
+	13344,
+	13344,
+	13344,
+	13413,
+	13344,
+	21574,
+	10467,
+	10467,
+	10467,
+	13344,
+	13413,
+	13280,
+	13515,
+	7828,
+	13280,
+	7828,
+	5466,
+	4612,
+	16452,
+	15639,
+	13344,
+	13515,
+	3004,
+	2463,
+	5466,
+	13280,
+	13515,
+	7828,
+	21489,
+	21574,
+	20115,
+	21574,
+	13515,
+	13515,
+	7828,
 };
 IL2CPP_EXTERN_C const Il2CppCodeGenModule g_UnityEngine_TerrainModule_CodeGenModule;
 const Il2CppCodeGenModule g_UnityEngine_TerrainModule_CodeGenModule = 
 {
 	"UnityEngine.TerrainModule.dll",
-	53,
+	58,
 	s_methodPointers,
 	1,
 	s_adjustorThunks,
