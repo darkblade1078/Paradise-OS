@@ -3,6 +3,10 @@ using Meta.WitAi;
 using Meta.WitAi.Json;
 using TMPro;
 
+/*
+This is a testing script for the voice dialogue system using Meta's Wit.ai.
+this will be deleted later as we I intergrate voice dialogue into the main dialogue system.
+*/
 public class QuestVoiceDialogue : MonoBehaviour
 {
     [Header("Components")]
@@ -19,15 +23,10 @@ public class QuestVoiceDialogue : MonoBehaviour
     {
         // Get Wit component if not assigned
         if (wit == null)
-        {
             wit = GetComponent<Wit>();
-        }
         
         if (wit == null)
-        {
-            Debug.LogError("Wit component not found!");
             return;
-        }
         
         // Subscribe to events
         wit.VoiceEvents.OnStartListening.AddListener(OnStartListening);
@@ -39,80 +38,48 @@ public class QuestVoiceDialogue : MonoBehaviour
         UpdateStatus("Ready! Press A to talk.");
         
         if (listeningIndicator != null)
-        {
             listeningIndicator.SetActive(false);
-        }
-    }
-
-    void Update()
-    {
-        // Press A button on right controller to activate voice
-        if (OVRInput.GetDown(OVRInput.Button.One))
-        {
-            ActivateVoice();
-        }
-        
-        // For testing in Unity Editor
-        if (Input.GetKeyDown(KeyCode.Space))
-        {
-            ActivateVoice();
-        }
     }
 
     void ActivateVoice()
     {
         if (wit != null && !wit.Active)
-        {
             wit.Activate();
-            Debug.Log("Voice activated - speak now!");
-        }
     }
 
     void DeactivateVoice()
     {
         if (wit != null && wit.Active)
-        {
             wit.Deactivate();
-        }
     }
 
     // Called when Wit starts listening
     void OnStartListening()
     {
         isListening = true;
-        Debug.Log("🎤 Listening...");
-        UpdateStatus("🎤 Listening...");
         
         if (listeningIndicator != null)
-        {
             listeningIndicator.SetActive(true);
-        }
     }
 
     // Called when Wit stops listening
     void OnStoppedListening()
     {
         isListening = false;
-        Debug.Log("Processing...");
-        UpdateStatus("Processing...");
         
         if (listeningIndicator != null)
-        {
             listeningIndicator.SetActive(false);
-        }
     }
 
     // Called while user is speaking (real-time)
     void OnPartialTranscription(string transcription)
     {
-        Debug.Log("Partial: " + transcription);
         UpdateTranscription(transcription + "...");
     }
 
     // Called when transcription is complete
     void OnFullTranscription(string transcription)
     {
-        Debug.Log("✅ Full transcription: " + transcription);
         UpdateTranscription(transcription);
         UpdateStatus("Ready! Press A to talk.");
         
@@ -123,7 +90,6 @@ public class QuestVoiceDialogue : MonoBehaviour
     // Called if there's an error
     void OnError(string error, string message)
     {
-        Debug.LogError($"Wit Error: {error} - {message}");
         UpdateStatus("Error: " + message);
         UpdateTranscription("Could not understand. Try again.");
         
@@ -138,34 +104,21 @@ public class QuestVoiceDialogue : MonoBehaviour
     {
         string lower = userSpeech.ToLower();
         
-        Debug.Log($"Processing: '{userSpeech}'");
-        
         // Simple keyword matching
         if (lower.Contains("yes") || lower.Contains("yeah") || lower.Contains("sure") || lower.Contains("yep"))
-        {
             OnDialogueChoice("yes");
-        }
         else if (lower.Contains("no") || lower.Contains("nope") || lower.Contains("nah"))
-        {
             OnDialogueChoice("no");
-        }
         else if (lower.Contains("maybe") || lower.Contains("not sure") || lower.Contains("i don't know"))
-        {
             OnDialogueChoice("maybe");
-        }
         else
-        {
             OnDialogueChoice("unknown");
-        }
     }
 
     // Handle the dialogue choice
     void OnDialogueChoice(string choice)
     {
         Debug.Log($"💬 Dialogue choice: {choice.ToUpper()}");
-        
-        // TODO: Connect this to your dialogue system
-        // Example: DialogueManager.Instance.ProcessChoice(choice);
         
         switch (choice)
         {
@@ -194,17 +147,13 @@ public class QuestVoiceDialogue : MonoBehaviour
     void UpdateStatus(string status)
     {
         if (statusText != null)
-        {
             statusText.text = status;
-        }
     }
 
     void UpdateTranscription(string text)
     {
         if (transcriptionText != null)
-        {
             transcriptionText.text = text;
-        }
     }
 
     void OnDestroy()

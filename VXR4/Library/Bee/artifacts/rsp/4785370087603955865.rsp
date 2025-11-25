@@ -50,6 +50,7 @@
 -a="C:\Users\gamin\Documents\GitHub\VXR4\VXR4\Library\Bee\PlayerScriptAssemblies\Unity.RenderPipelines.Universal.Shaders.dll"
 -a="C:\Users\gamin\Documents\GitHub\VXR4\VXR4\Library\Bee\PlayerScriptAssemblies\Unity.TextMeshPro.dll"
 -a="C:\Users\gamin\Documents\GitHub\VXR4\VXR4\Library\Bee\PlayerScriptAssemblies\Unity.Timeline.dll"
+-a="C:\Users\gamin\Documents\GitHub\VXR4\VXR4\Library\Bee\PlayerScriptAssemblies\Unity.VisualEffectGraph.Runtime.dll"
 -a="C:\Users\gamin\Documents\GitHub\VXR4\VXR4\Library\Bee\PlayerScriptAssemblies\Unity.VisualScripting.Core.dll"
 -a="C:\Users\gamin\Documents\GitHub\VXR4\VXR4\Library\Bee\PlayerScriptAssemblies\Unity.VisualScripting.Flow.dll"
 -a="C:\Users\gamin\Documents\GitHub\VXR4\VXR4\Library\Bee\PlayerScriptAssemblies\Unity.VisualScripting.State.dll"
