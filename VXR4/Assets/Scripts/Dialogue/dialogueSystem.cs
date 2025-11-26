@@ -7,7 +7,6 @@ public class DialogueSystemManager : MonoBehaviour
     [Header("Dialogue System References")]
     public DialogueBlock currentBlock;
     public AudioSource audioSource;
-    public TextMeshProUGUI subtitleText;
     public GameObject choiceUI;
 
     private Coroutine dialogueCoroutine;
@@ -29,20 +28,14 @@ public class DialogueSystemManager : MonoBehaviour
     IEnumerator PlayBlockCoroutine()
     {
         int clipCount = currentBlock.voiceClips != null ? currentBlock.voiceClips.Length : 0;
-        int subtitleCount = currentBlock.subtitles != null ? currentBlock.subtitles.Length : 0;
-        int minCount = Mathf.Min(clipCount, subtitleCount);
-        for (int i = 0; i < minCount; i++)
+        for (int i = 0; i < clipCount; i++)
         {
             var clip = currentBlock.voiceClips[i];
             if (clip == null) continue;
             audioSource.clip = clip;
             audioSource.Play();
-            subtitleText.text = currentBlock.subtitles[i];
             yield return new WaitForSeconds(clip.length);
         }
-
-        if (subtitleText != null)
-            subtitleText.text = "";
             
         // Decision logic for next block
         if (currentBlock.useDefaultBlock && currentBlock.defaultBlock != null)
@@ -79,8 +72,6 @@ public class DialogueSystemManager : MonoBehaviour
 
     void EndDialogue()
     {
-        if (subtitleText != null)
-            subtitleText.text = "";
         if (choiceUI != null)
             choiceUI.SetActive(false);
     }

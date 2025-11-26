@@ -302,15 +302,15 @@
           },
           {
             "name": "Light",
-            "scenes": [
-              "Assets/Scenes/Start.unity"
-            ],
+            "scenes": [],
             "dependencyType": 0,
             "icon": null
           },
           {
             "name": "LightProbes",
-            "scenes": [],
+            "scenes": [
+              "Assets/Scenes/Start.unity"
+            ],
             "dependencyType": 0,
             "icon": null
           },
@@ -892,9 +892,7 @@
         "dependencies": [
           {
             "name": "BoxCollider",
-            "scenes": [
-              "Assets/Scenes/Start.unity"
-            ],
+            "scenes": [],
             "dependencyType": 0,
             "icon": null
           },
