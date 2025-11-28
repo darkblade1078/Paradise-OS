@@ -10,12 +10,8 @@ public class ButtonInteraction : MonoBehaviour
     public AudioSource buttonSource;
     public AudioClip buttonClip;
 
-    [Header("Text Settings")]
-    public TextMeshProUGUI displayText;
-
-    [Header("Dialogue Settings")]
-    public DialogueBlock dialogueBlock;
-    public DisplayTextBlock displayBlock;
+    [Header("Button Text")]
+    public TextMeshProUGUI buttonText;
 
     public void OnButtonPress()
     {

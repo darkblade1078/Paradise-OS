@@ -482,8 +482,11 @@
 "Assets/Scripts/Dialogue/dialogueSystem.cs"
 "Assets/Scripts/Interactions/ButtonInteraction.cs"
 "Assets/Scripts/Interactions/ButtonInteractionManager.cs"
+"Assets/Scripts/Saving/SaveData.cs"
+"Assets/Scripts/Saving/SaveManager.cs"
+"Assets/Scripts/Saving/SaveSystem.cs"
 "Assets/Scripts/ScriptableObjects/dialogueBlocks.cs"
-"Assets/Scripts/ScriptableObjects/displayTextBlocks.cs"
+"Assets/Scripts/ScriptableObjects/WYRBlocks.cs"
 "Assets/Scripts/UI/FollowCamera.cs"
 "Assets/Scripts/Voice/QuestVoiceDialogue.cs"
 -langversion:9.0
