@@ -1,0 +1,29 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a6891d240412df040addbcc15dd20988, type: 3}
+  m_Name: 2.2
+  m_EditorClassIdentifier: 
+  preClips:
+  - {fileID: 8300000, guid: 53a72f6f2a1997a44aae967c46a2d2f7, type: 3}
+  - {fileID: 8300000, guid: a41c3b63cf6775d42a7cf7f3b2f7cc7b, type: 3}
+  - {fileID: 8300000, guid: 469175ace3dfbdc418d35688c1ce8e9f, type: 3}
+  choices:
+  - nextBlock: {fileID: 0}
+    postClips:
+    - {fileID: 8300000, guid: 3959d80864ef14545a111d207c30d2ff, type: 3}
+    actionObjectIndex: -1
+  - nextBlock: {fileID: 0}
+    postClips:
+    - {fileID: 8300000, guid: 0b375cdb251d7054898629828a624ffa, type: 3}
+    actionObjectIndex: -1
+  blueChoice: Eat ice cream for a week
+  redChoice: Eat pizza for a week

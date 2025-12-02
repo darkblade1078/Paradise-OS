@@ -1,134 +1,187 @@
 using UnityEngine;
 using TMPro;
 using System.Collections;
+using System.Collections.Generic;
 
 public class ButtonInteractionManager : MonoBehaviour
 {
-    [Tooltip("Audio Settings")]
-    public AudioSource buttonSource;
+    [Header("Buttons")]
+    public ButtonInteraction redButton;
+    public ButtonInteraction blueButton;
+
+    [Header("Speaker Audio Source")]
     public AudioSource speakerSource;
-    public AudioClip buttonPressClip;
 
-    [Tooltip("Text Settings")]
-    public string colorName = "";
-    public TextMeshProUGUI displayText;
+    [Header("Intro Dialogue")]
+    public DialogueBlock introBlock;
 
-    [Tooltip("Dialogue Settings")]
-    public DialogueBlock WYRBlock;
-    public DialogueBlock dialogueBlock;
-    public DisplayTextBlock displayBlock;
+    [Header("WYR Block")]
+    public WYRBlock wYRBlock;
 
-    [Tooltip("Button Settings")]
-    public ButtonInteractionManager otherButton;
+    [Header("Events")]
+    public List<GameObject> actionObjects;
 
-    // whichever clip is currently playing for our WYR.
-    private int currentClip = 0;
+    private bool introPlayed = false;
     private bool waitingForButton = false;
-    private int wyrIndex = 0;
+    private ButtonInteraction lastButtonPressed;
 
-    public void Awake()
+    private void Awake()
     {
-        StartCoroutine(WYRLoop());
+        // Play intro dialogue first, then wait for button press to start WYR block
+        if (introBlock != null && introBlock.voiceClips != null && introBlock.voiceClips.Length > 0 && !introPlayed)
+            StartCoroutine(PlayIntroCoroutine());
     }
 
-    public void OnButtonPress()
+    private IEnumerator PlayIntroCoroutine()
     {
-        if (!waitingForButton) return;
-        waitingForButton = false;
-        PlayButtonPressSound();
-        StartCoroutine(PlayOwnResponse());
-    }
-
-    private IEnumerator WYRLoop()
-    {
-        while (true)
+        introPlayed = true;
+        for (int i = 0; i < introBlock.voiceClips.Length; i++)
         {
-            // Play all clips in current WYRBlock
-            if (WYRBlock != null && WYRBlock.voiceClips.Length > 0)
+            speakerSource.Stop();
+            speakerSource.clip = introBlock.voiceClips[i];
+            speakerSource.Play();
+            yield return new WaitWhile(() => speakerSource.isPlaying);
+        }
+
+        // After intro, set button texts to first WYR block's choices
+        if (wYRBlock != null)
+        {
+            if (blueButton != null && blueButton.buttonText != null)
+                blueButton.buttonText.text = wYRBlock.blueChoice;
+            if (redButton != null && redButton.buttonText != null)
+                redButton.buttonText.text = wYRBlock.redChoice;
+        }
+
+        StartCoroutine(PlayWYRBlockClipsCoroutine());
+    }
+
+    private IEnumerator PlayWYRBlockClipsCoroutine()
+    {
+        // Reset both buttons' text color to white at the start of WYR block
+        if (redButton != null && redButton.buttonText != null)
+            redButton.buttonText.color = Color.white;
+        if (blueButton != null && blueButton.buttonText != null)
+            blueButton.buttonText.color = Color.white;
+        // Set button texts to current block's choices at the start
+        if (wYRBlock != null)
+        {
+            if (blueButton != null && blueButton.buttonText != null)
+                blueButton.buttonText.text = wYRBlock.blueChoice;
+            if (redButton != null && redButton.buttonText != null)
+                redButton.buttonText.text = wYRBlock.redChoice;
+        }
+        // Play preClips before button press
+        if (wYRBlock != null && wYRBlock.preClips != null)
+        {
+            for (int i = 0; i < wYRBlock.preClips.Length; i++)
             {
-                // Reset both displayTexts to white for new WYR
-                displayText.color = Color.white;
-                if (otherButton != null && otherButton.displayText != null)
-                    otherButton.displayText.color = Color.white;
+                speakerSource.Stop();
+                speakerSource.clip = wYRBlock.preClips[i];
+                speakerSource.Play();
+                yield return new WaitWhile(() => speakerSource.isPlaying);
+            }
+        }
+        waitingForButton = true;
+    }
 
-                for (int i = 0; i < WYRBlock.voiceClips.Length; i++)
+    public void PlayButtonDialogue(ButtonInteraction button)
+    {
+        if (!waitingForButton)
+            return;
+
+        waitingForButton = false;
+        lastButtonPressed = button;
+
+        // Stop any currently playing audio before advancing
+        if (speakerSource != null && speakerSource.isPlaying)
+            speakerSource.Stop();
+
+        // Set button text to gold when pressed
+        if (button != null && button.buttonText != null)
+            button.buttonText.color = new Color(1f, 0.84f, 0f); // Gold
+            
+        StartCoroutine(PlayButtonResponseAndNextWYR(button));
+    }
+
+    private IEnumerator PlayButtonResponseAndNextWYR(ButtonInteraction button)
+    {
+        // Play postClips from the chosen WYRChoice before branching
+        int choiceIndex = (button == blueButton) ? 0 : (button == redButton) ? 1 : -1;
+        if (wYRBlock != null && wYRBlock.choices != null && choiceIndex >= 0 && choiceIndex < wYRBlock.choices.Length)
+        {
+            var choice = wYRBlock.choices[choiceIndex];
+            // Play post clips first
+            if (choice.postClips != null)
+            {
+                for (int i = 0; i < choice.postClips.Length; i++)
                 {
-                    // Always set text to something valid
-                    if (i == 1 && colorName == "Blue" && displayBlock != null)
-                    {
-                        displayText.text = displayBlock.text;
-                    }
-                    else if (i == 2 && colorName == "Red" && displayBlock != null)
-                    {
-                        displayText.text = displayBlock.text;
-                    }
-                    else if (displayBlock != null)
-                    {
-                        displayText.text = displayBlock.text;
-                    }
-                    displayText.enableAutoSizing = true;
-                    displayText.ForceMeshUpdate();
-
-                    var clip = WYRBlock.voiceClips[i];
                     speakerSource.Stop();
-                    speakerSource.clip = clip;
+                    speakerSource.clip = choice.postClips[i];
                     speakerSource.Play();
-                    yield return new WaitForSeconds(clip.length);
+                    yield return new WaitWhile(() => speakerSource.isPlaying);
                 }
             }
 
-            // Wait for button press
-            waitingForButton = true;
-            while (waitingForButton)
+            // After post clips, call Execute method for this choice
+            if (choice.actionObjectIndex >= 0 && choice.actionObjectIndex < actionObjects.Count)
             {
-                yield return null;
+                var target = actionObjects[choice.actionObjectIndex];
+                var component = target.GetComponent<MonoBehaviour>();
+                if (component != null)
+                {
+                    var method = component.GetType().GetMethod("Execute");
+                    if (method != null)
+                        method.Invoke(component, null);
+                }
             }
 
-            // Wait for response to finish (handled in PlayResponseAndNextWYR)
-            yield return new WaitUntil(() => !speakerSource.isPlaying);
-
-            // Advance to next WYR (if you have multiple blocks, update here)
-            wyrIndex++;
-        }
-    }
-
-    private IEnumerator PlayOwnResponse()
-    {
-        // Play only this button's assigned dialogueBlock clip and update its text
-        if (dialogueBlock != null && dialogueBlock.voiceClips.Length > 0)
-        {
-            // Play the correct clip and set text for this button
-            displayText.text = displayBlock != null ? displayBlock.text : "";
-            displayText.color = new Color(1f, 0.84f, 0f); // Gold
-            if (otherButton != null && otherButton.displayText != null)
-                otherButton.displayText.color = Color.white; // Ensure other stays white
-            displayText.enableAutoSizing = true;
-            displayText.ForceMeshUpdate();
-
-            // If blue, play first clip; if red, play second clip
-            int clipIndex = colorName == "Blue" ? 0 : colorName == "Red" ? 1 : 0;
-            if (clipIndex < dialogueBlock.voiceClips.Length)
+            // Branch to next block only after post clips and event
+            if (choice.nextBlock != null)
             {
-                var clip = dialogueBlock.voiceClips[clipIndex];
-                speakerSource.Stop();
-                speakerSource.clip = clip;
-                speakerSource.Play();
-                yield return new WaitForSeconds(clip.length);
+                wYRBlock = choice.nextBlock;
+            }
+            else
+            {
+                // End of script: disable buttons and stop
+                if (blueButton != null) blueButton.gameObject.SetActive(false);
+                if (redButton != null) redButton.gameObject.SetActive(false);
+                yield break;
             }
         }
-        yield break;
-    }
 
-    private void SetTextColor()
-    {
-        displayText.color = new Color(1f, 0.84f, 0f); // RGB for gold
-    }
-
-    private void PlayButtonPressSound()
-    {
-        if (buttonSource != null && buttonPressClip != null)
+        // Update button texts to new WYR block's choices
+        if (wYRBlock != null)
         {
-            buttonSource.PlayOneShot(buttonPressClip);
+            if (blueButton != null && blueButton.buttonText != null)
+                blueButton.buttonText.text = wYRBlock.blueChoice;
+            if (redButton != null && redButton.buttonText != null)
+                redButton.buttonText.text = wYRBlock.redChoice;
+        }
+
+        // Play next WYR block's preClips
+        StartCoroutine(PlayWYRBlockClipsCoroutine());
+    }
+
+    private void AdvanceToNextBlocks()
+    {
+        // Branching logic for WYRBlock
+        if (wYRBlock != null && wYRBlock.choices != null && wYRBlock.choices.Length > 0)
+        {
+            int choiceIndex = (lastButtonPressed == blueButton) ? 0 : (lastButtonPressed == redButton) ? 1 : -1;
+            if (choiceIndex >= 0 && choiceIndex < wYRBlock.choices.Length)
+            {
+                if (wYRBlock.choices[choiceIndex].nextBlock != null)
+                    wYRBlock = wYRBlock.choices[choiceIndex].nextBlock;
+            }
+        }
+        // Update button texts to new WYR block's choices
+        if (wYRBlock != null)
+        {
+            if (blueButton != null && blueButton.buttonText != null)
+                blueButton.buttonText.text = wYRBlock.blueChoice;
+
+            if (redButton != null && redButton.buttonText != null)
+                redButton.buttonText.text = wYRBlock.redChoice;
         }
     }
 }

@@ -1,3 +1,4 @@
+Library\Bee\artifacts\mvdfrm\Unity.2D.Sprite.Editor.ref.dll_6C8185F9E5AE014E.mvfrm
 Library\Bee\artifacts\mvdfrm\Unity.AI.Navigation.Editor.ConversionSystem.ref.dll_9957BA1AF208A4B4.mvfrm
 Library\Bee\artifacts\mvdfrm\Unity.AI.Navigation.Editor.ref.dll_61B1FDAFDA0EF665.mvfrm
 Library\Bee\artifacts\mvdfrm\Unity.AI.Navigation.Updater.ref.dll_EBACA68F09445567.mvfrm
@@ -23,10 +24,13 @@ Library\Bee\artifacts\mvdfrm\Unity.RenderPipelines.Universal.Shaders.ref.dll_D6F
 Library\Bee\artifacts\mvdfrm\Unity.Rider.Editor.ref.dll_DA88E6A3E9EB6155.mvfrm
 Library\Bee\artifacts\mvdfrm\Unity.Searcher.Editor.ref.dll_1D712DD21DFFF248.mvfrm
 Library\Bee\artifacts\mvdfrm\Unity.ShaderGraph.Editor.ref.dll_CA6C4521A25CEDB6.mvfrm
+Library\Bee\artifacts\mvdfrm\Unity.Sysroot.Linux_x86_64.ref.dll_0CF00D8B82A87F25.mvfrm
+Library\Bee\artifacts\mvdfrm\Unity.SysrootPackage.Editor.ref.dll_08B16BA041802A06.mvfrm
 Library\Bee\artifacts\mvdfrm\Unity.TextMeshPro.Editor.ref.dll_D0BA3615D322EF6C.mvfrm
 Library\Bee\artifacts\mvdfrm\Unity.TextMeshPro.ref.dll_02929A3ECA791895.mvfrm
 Library\Bee\artifacts\mvdfrm\Unity.Timeline.Editor.ref.dll_17F688653313AA4C.mvfrm
 Library\Bee\artifacts\mvdfrm\Unity.Timeline.ref.dll_16F8EA6B67022FB5.mvfrm
+Library\Bee\artifacts\mvdfrm\Unity.Toolchain.Win-x86_64-Linux-x86_64.ref.dll_64DDAC33FF976D62.mvfrm
 Library\Bee\artifacts\mvdfrm\Unity.VSCode.Editor.ref.dll_AE868214B5ED3D13.mvfrm
 Library\Bee\artifacts\mvdfrm\Unity.VisualEffectGraph.Editor.ref.dll_F78A7DF3763851D2.mvfrm
 Library\Bee\artifacts\mvdfrm\Unity.VisualEffectGraph.Runtime.ref.dll_1844AAD4CF3D1A39.mvfrm
@@ -140,6 +144,7 @@ Library\Bee\artifacts\mvdfrm\Unity.Android.Gradle.dll_FD6630CFD088C9CB.mvfrm
 Library\Bee\artifacts\mvdfrm\Unity.Android.GradleProject.dll_63A1E91F52DD0B9A.mvfrm
 Library\Bee\artifacts\mvdfrm\Unity.Android.Types.dll_E0B58A298A3005A1.mvfrm
 Library\Bee\artifacts\mvdfrm\UnityEditor.Android.Extensions.dll_7DB3DAA4DAFF02EB.mvfrm
+Library\Bee\artifacts\mvdfrm\UnityEditor.LinuxStandalone.Extensions.dll_2CC1EEE87673BA5D.mvfrm
 Library\Bee\artifacts\mvdfrm\UnityEditor.WindowsStandalone.Extensions.dll_124DF642FEF6D46D.mvfrm
 Library\Bee\artifacts\mvdfrm\Unity.Plastic.Antlr3.Runtime.dll_4B6100B649C5E8F2.mvfrm
 Library\Bee\artifacts\mvdfrm\Unity.Plastic.Newtonsoft.Json.dll_9DC56F89854E6423.mvfrm

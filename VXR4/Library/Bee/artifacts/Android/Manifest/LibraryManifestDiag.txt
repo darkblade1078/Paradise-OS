@@ -24,7 +24,6 @@ android.permission.RECORD_AUDIO, android.permission.MODIFY_AUDIO_SETTINGS, andro
 	UnityEngine.Microphone was present in:
 		Meta.VoiceSDK.Mic.Common-FeaturesChecked.txt
 		Meta.VoiceSDK.Mic.Other-FeaturesChecked.txt
-Unity is trying to add element uses-permission#android.permission.RECORD_AUDIO but it is already declared by the user in Assets/Plugins/Android\AndroidManifest.xml.
 Unity is trying to add element uses-permission#android.permission.MODIFY_AUDIO_SETTINGS but it is already declared by the user in Assets/Plugins/Android\AndroidManifest.xml.
 android.hardware.touchscreen.multitouch, android.hardware.touchscreen.multitouch.distinct were enabled because:
 	UnityEngine.Input::get_touches was present in:
