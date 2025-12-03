@@ -1,6 +1,6 @@
 Using pre-set license
 Built from '2022.3/staging' branch; Version is '2022.3.44f1 (c3ae09b9f03c) revision 12824073'; Using compiler version '192829333'; Build Type 'Release'
-OS: 'Windows 11  (10.0.26200) 64bit Core' Language: 'en' Physical Memory: 7962 MB
+OS: 'Windows 10  (10.0.19045) 64bit Core' Language: 'en' Physical Memory: 32509 MB
 BatchMode: 1, IsHumanControllingUs: 0, StartBugReporterOnCrash: 0, Is64bit: 1, IsPro: 1
 
 COMMAND LINE ARGUMENTS:
@@ -11,13 +11,13 @@ C:\Program Files\Unity\Hub\Editor\2022.3.44f1\Editor\Unity.exe
 -name
 AssetImportWorker1
 -projectPath
-C:/Users/Voltron/Documents/GitHub/VXR3/VXR4/VXR4
+C:/Users/Hayden/Desktop/school/VXR4/VXR4
 -logFile
 Logs/AssetImportWorker1.log
 -srvPort
-50918
-Successfully changed project path to: C:/Users/Voltron/Documents/GitHub/VXR3/VXR4/VXR4
-C:/Users/Voltron/Documents/GitHub/VXR3/VXR4/VXR4
+50351
+Successfully changed project path to: C:/Users/Hayden/Desktop/school/VXR4/VXR4
+C:/Users/Hayden/Desktop/school/VXR4/VXR4
 [UnityMemory] Configuration Parameters - Can be set up in boot.config
     "memorysetup-bucket-allocator-granularity=16"
     "memorysetup-bucket-allocator-bucket-count=8"
@@ -49,73 +49,75 @@ C:/Users/Voltron/Documents/GitHub/VXR3/VXR4/VXR4
     "memorysetup-temp-allocator-size-cloud-worker=32768"
     "memorysetup-temp-allocator-size-gi-baking-worker=262144"
     "memorysetup-temp-allocator-size-gfx=262144"
-Player connection [4364]  Target information:
+Player connection [45960]  Target information:
 
-Player connection [4364]  * "[IP] 10.0.0.3 [Port] 0 [Flags] 2 [Guid] 3926032500 [EditorId] 3926032500 [Version] 1048832 [Id] WindowsEditor(7,DESKTOP-NS7AT51) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" 
+Player connection [45960]  * "[IP] 192.168.50.41 [Port] 0 [Flags] 2 [Guid] 1769881510 [EditorId] 1769881510 [Version] 1048832 [Id] WindowsEditor(7,Petrichor-VII) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" 
 
-Player connection [4364] Host joined multi-casting on [225.0.0.222:54997]...
-Player connection [4364] Host joined alternative multi-casting on [225.0.0.222:34997]...
-[PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
-Refreshing native plugins compatible for Editor in 1229.91 ms, found 13 plugins.
+Player connection [45960]  * "[IP] 192.168.56.1 [Port] 0 [Flags] 2 [Guid] 1769881510 [EditorId] 1769881510 [Version] 1048832 [Id] WindowsEditor(7,Petrichor-VII) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" 
+
+Player connection [45960]  * "[IP] 26.8.95.116 [Port] 0 [Flags] 2 [Guid] 1769881510 [EditorId] 1769881510 [Version] 1048832 [Id] WindowsEditor(7,Petrichor-VII) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" 
+
+Player connection [45960] Host joined multi-casting on [225.0.0.222:54997]...
+Player connection [45960] Host joined alternative multi-casting on [225.0.0.222:34997]...
+[PhysX] Initialized MultithreadedTaskDispatcher with 24 workers.
+Refreshing native plugins compatible for Editor in 27.46 ms, found 13 plugins.
 Unity memory allocator detected: MetaXRAudio native memory allocations will be tracked.
-Preloading 3 native plugins for Editor in 28.27 ms.
+Preloading 3 native plugins for Editor in 3.35 ms.
 Initialize engine version: 2022.3.44f1 (c3ae09b9f03c)
 [Subsystems] Discovering subsystems at path C:/Program Files/Unity/Hub/Editor/2022.3.44f1/Editor/Data/Resources/UnitySubsystems
-[Subsystems] Discovering subsystems at path C:/Users/Voltron/Documents/GitHub/VXR3/VXR4/VXR4/Assets
+[Subsystems] Discovering subsystems at path C:/Users/Hayden/Desktop/school/VXR4/VXR4/Assets
 GfxDevice: creating device client; threaded=0; jobified=0
 Direct3D:
     Version:  Direct3D 11.0 [level 11.1]
-    Renderer: NVIDIA GeForce GTX 1660 Ti with Max-Q Design (ID=0x2191)
+    Renderer: NVIDIA GeForce RTX 4060 Ti (ID=0x2803)
     Vendor:   NVIDIA
-    VRAM:     5966 MB
-    Driver:   32.0.15.7703
+    VRAM:     7949 MB
+    Driver:   32.0.15.7602
 Initialize mono
 Mono path[0] = 'C:/Program Files/Unity/Hub/Editor/2022.3.44f1/Editor/Data/Managed'
 Mono path[1] = 'C:/Program Files/Unity/Hub/Editor/2022.3.44f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit-win32'
 Mono config path = 'C:/Program Files/Unity/Hub/Editor/2022.3.44f1/Editor/Data/MonoBleedingEdge/etc'
-Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56120
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56776
 Begin MonoManager ReloadAssembly
 Registering precompiled unity dll's ...
 Register platform support module: C:/Program Files/Unity/Hub/Editor/2022.3.44f1/Editor/Data/PlaybackEngines/AndroidPlayer/UnityEditor.Android.Extensions.dll
 Register platform support module: C:/Program Files/Unity/Hub/Editor/2022.3.44f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
-Register platform support module: C:/Program Files/Unity/Hub/Editor/2022.3.44f1/Editor/Data/PlaybackEngines/LinuxStandaloneSupport/UnityEditor.LinuxStandalone.Extensions.dll
-Registered in 0.272382 seconds.
-- Loaded All Assemblies, in  5.929 seconds
-Native extension for LinuxStandalone target not found
+Registered in 0.013586 seconds.
+- Loaded All Assemblies, in  0.374 seconds
 Native extension for WindowsStandalone target not found
 Native extension for Android target not found
-Android Extension - Scanning For ADB Devices 354 ms
+Android Extension - Scanning For ADB Devices 761 ms
 Mono: successfully reloaded assembly
-- Finished resetting the current domain, in  1.006 seconds
-Domain Reload Profiling: 6934ms
-	BeginReloadAssembly (4801ms)
+- Finished resetting the current domain, in  1.065 seconds
+Domain Reload Profiling: 1437ms
+	BeginReloadAssembly (117ms)
 		ExecutionOrderSort (0ms)
 		DisableScriptedObjects (0ms)
 		BackupInstance (0ms)
 		ReleaseScriptingObjects (0ms)
-		CreateAndSetChildDomain (2ms)
-	RebuildCommonClasses (53ms)
-	RebuildNativeTypeToScriptingClass (12ms)
-	initialDomainReloadingComplete (349ms)
-	LoadAllAssembliesAndSetupDomain (711ms)
-		LoadAssemblies (4795ms)
+		CreateAndSetChildDomain (1ms)
+	RebuildCommonClasses (33ms)
+	RebuildNativeTypeToScriptingClass (10ms)
+	initialDomainReloadingComplete (68ms)
+	LoadAllAssembliesAndSetupDomain (144ms)
+		LoadAssemblies (116ms)
 		RebuildTransferFunctionScriptingTraits (0ms)
-		AnalyzeDomain (705ms)
-			TypeCache.Refresh (703ms)
-				TypeCache.ScanAssembly (680ms)
-			ScanForSourceGeneratedMonoScriptInfo (1ms)
+		AnalyzeDomain (141ms)
+			TypeCache.Refresh (139ms)
+				TypeCache.ScanAssembly (126ms)
+			ScanForSourceGeneratedMonoScriptInfo (0ms)
 			ResolveRequiredComponents (1ms)
-	FinalizeReload (1007ms)
+	FinalizeReload (1065ms)
 		ReleaseScriptCaches (0ms)
 		RebuildScriptCaches (0ms)
-		SetupLoadedEditorAssemblies (942ms)
+		SetupLoadedEditorAssemblies (1021ms)
 			LogAssemblyErrors (0ms)
-			InitializePlatformSupportModulesInManaged (665ms)
-			SetLoadedEditorAssemblies (7ms)
+			InitializePlatformSupportModulesInManaged (855ms)
+			SetLoadedEditorAssemblies (4ms)
 			RefreshPlugins (0ms)
-			BeforeProcessingInitializeOnLoad (3ms)
-			ProcessInitializeOnLoadAttributes (186ms)
-			ProcessInitializeOnLoadMethodAttributes (81ms)
+			BeforeProcessingInitializeOnLoad (2ms)
+			ProcessInitializeOnLoadAttributes (112ms)
+			ProcessInitializeOnLoadMethodAttributes (48ms)
 			AfterProcessingInitializeOnLoad (0ms)
 			EditorAssembliesLoaded (0ms)
 		ExecutionOrderSort2 (0ms)
@@ -125,8 +127,7 @@ Worker process is ready to serve import requests
 Caller must complete domain reload
 Begin MonoManager ReloadAssembly
 Symbol file LoadedFromMemory is not a mono symbol file
-- Loaded All Assemblies, in 29.807 seconds
-Native extension for LinuxStandalone target not found
+- Loaded All Assemblies, in  1.061 seconds
 Native extension for WindowsStandalone target not found
 Native extension for Android target not found
 Package Manager log level set to [2]
@@ -158,51 +159,51 @@ Mono: successfully reloaded assembly
 [Package Manager] Server::EnsureServerProcessIsRunning -- launch failed, reason: Unity was launched with the -noUpm command-line argument
 [Package Manager] UpmClient::Send -- Unable to send message (not connected to UPM process).
 [Package Manager] Cannot connect to Unity Package Manager local server
-- Finished resetting the current domain, in  1.957 seconds
-Domain Reload Profiling: 31730ms
-	BeginReloadAssembly (242ms)
+- Finished resetting the current domain, in  1.316 seconds
+Domain Reload Profiling: 2362ms
+	BeginReloadAssembly (162ms)
 		ExecutionOrderSort (0ms)
-		DisableScriptedObjects (6ms)
+		DisableScriptedObjects (5ms)
 		BackupInstance (0ms)
 		ReleaseScriptingObjects (0ms)
-		CreateAndSetChildDomain (35ms)
-	RebuildCommonClasses (45ms)
-	RebuildNativeTypeToScriptingClass (12ms)
-	initialDomainReloadingComplete (53ms)
-	LoadAllAssembliesAndSetupDomain (29420ms)
-		LoadAssemblies (28697ms)
+		CreateAndSetChildDomain (25ms)
+	RebuildCommonClasses (32ms)
+	RebuildNativeTypeToScriptingClass (10ms)
+	initialDomainReloadingComplete (55ms)
+	LoadAllAssembliesAndSetupDomain (785ms)
+		LoadAssemblies (527ms)
 		RebuildTransferFunctionScriptingTraits (0ms)
-		AnalyzeDomain (867ms)
-			TypeCache.Refresh (652ms)
-				TypeCache.ScanAssembly (585ms)
-			ScanForSourceGeneratedMonoScriptInfo (164ms)
-			ResolveRequiredComponents (47ms)
-	FinalizeReload (1957ms)
+		AnalyzeDomain (355ms)
+			TypeCache.Refresh (274ms)
+				TypeCache.ScanAssembly (243ms)
+			ScanForSourceGeneratedMonoScriptInfo (57ms)
+			ResolveRequiredComponents (23ms)
+	FinalizeReload (1316ms)
 		ReleaseScriptCaches (0ms)
 		RebuildScriptCaches (0ms)
-		SetupLoadedEditorAssemblies (1446ms)
+		SetupLoadedEditorAssemblies (1047ms)
 			LogAssemblyErrors (0ms)
-			InitializePlatformSupportModulesInManaged (52ms)
-			SetLoadedEditorAssemblies (9ms)
+			InitializePlatformSupportModulesInManaged (20ms)
+			SetLoadedEditorAssemblies (4ms)
 			RefreshPlugins (0ms)
-			BeforeProcessingInitializeOnLoad (260ms)
-			ProcessInitializeOnLoadAttributes (954ms)
-			ProcessInitializeOnLoadMethodAttributes (164ms)
-			AfterProcessingInitializeOnLoad (7ms)
+			BeforeProcessingInitializeOnLoad (142ms)
+			ProcessInitializeOnLoadAttributes (786ms)
+			ProcessInitializeOnLoadMethodAttributes (82ms)
+			AfterProcessingInitializeOnLoad (11ms)
 			EditorAssembliesLoaded (0ms)
 		ExecutionOrderSort2 (0ms)
-		AwakeInstancesAfterBackupRestoration (9ms)
+		AwakeInstancesAfterBackupRestoration (10ms)
 Shader 'Meta/MRUK/Scene/HighlightsAndShadows': fallback shader 'Off' not found
 Shader 'Oculus/OVRMRCameraFrameLit': fallback shader 'Alpha-Diffuse' not found
 Shader 'Meta/MRUK/Scene/HighlightsAndShadows': fallback shader 'Off' not found
 Shader 'Oculus/OVRMRCameraFrameLit': fallback shader 'Alpha-Diffuse' not found
-Launched and connected shader compiler UnityShaderCompiler.exe after 0.08 seconds
-Refreshing native plugins compatible for Editor in 52.36 ms, found 13 plugins.
-Preloading 3 native plugins for Editor in 0.40 ms.
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.06 seconds
+Refreshing native plugins compatible for Editor in 20.99 ms, found 13 plugins.
+Preloading 3 native plugins for Editor in 0.23 ms.
 Unloading 8990 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 158 unused Assets / (13.5 MB). Loaded Objects now: 9335.
-Memory consumption went from 346.9 MB to 333.3 MB.
-Total: 24.561600 ms (FindLiveObjects: 3.656700 ms CreateObjectMapping: 1.689300 ms MarkObjects: 12.333600 ms  DeleteObjects: 6.878500 ms)
+Unloading 158 unused Assets / (13.6 MB). Loaded Objects now: 9335.
+Memory consumption went from 347.8 MB to 334.2 MB.
+Total: 8.435700 ms (FindLiveObjects: 0.890500 ms CreateObjectMapping: 0.285700 ms MarkObjects: 4.700700 ms  DeleteObjects: 2.556700 ms)
 
 AssetImportParameters requested are different than current active one (requested -> active):
   custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
@@ -213,95 +214,36 @@ AssetImportParameters requested are different than current active one (requested
   custom:AudioImporter_EditorPlatform: d09bf68614088b80899f8185d706f6e7 -> 
   custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
   custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-  custom:video-codec-MediaFoundation-h265: 746d11721c4dcdbdad8f713fa42b33f4 -> 
   custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
   custom:CustomObjectIndexerAttribute: 72b91833f83ae208fae7752999fa3104 -> 
   custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
   custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
 ========================================================================
 Received Import Request.
-  Time since last request: 9660.380788 seconds.
-  path: Assets/VoiceLines/Cherry Twinkle/WYR/WYR 3.2/upside down.mp3
-  artifactKey: Guid(660e5b0a9ac365047860fb65cd762054) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/VoiceLines/Cherry Twinkle/WYR/WYR 3.2/upside down.mp3 using Guid(660e5b0a9ac365047860fb65cd762054) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
-[PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
- -> (artifact id: '4153199b5471f97083de8261dcdf6c7c') in 0.998645 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 2
-========================================================================
-Received Prepare
-Shader 'Meta/MRUK/Scene/HighlightsAndShadows': fallback shader 'Off' not found
-Shader 'Oculus/OVRMRCameraFrameLit': fallback shader 'Alpha-Diffuse' not found
-Shader 'Meta/MRUK/Scene/HighlightsAndShadows': fallback shader 'Off' not found
-Shader 'Oculus/OVRMRCameraFrameLit': fallback shader 'Alpha-Diffuse' not found
-Refreshing native plugins compatible for Editor in 41.43 ms, found 13 plugins.
-Preloading 3 native plugins for Editor in 3.40 ms.
-Unloading 73 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 73 unused Assets / (13.5 MB). Loaded Objects now: 9346.
-Memory consumption went from 171.6 MB to 158.1 MB.
-Total: 277.240800 ms (FindLiveObjects: 5.915000 ms CreateObjectMapping: 1.092200 ms MarkObjects: 264.387700 ms  DeleteObjects: 5.842900 ms)
-
-Prepare: number of updated asset objects reloaded= 0
-AssetImportParameters requested are different than current active one (requested -> active):
-  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
-  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
-  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
-  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
-  custom:SearchIndexIgnoredProperties: e643bd26f0fe6173181afceb89e7c659 -> 
-  custom:AudioImporter_EditorPlatform: d09bf68614088b80899f8185d706f6e7 -> 
-  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-  custom:video-codec-MediaFoundation-h265: 746d11721c4dcdbdad8f713fa42b33f4 -> 
-  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
-  custom:CustomObjectIndexerAttribute: 72b91833f83ae208fae7752999fa3104 -> 
-  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
-  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
-========================================================================
-Received Import Request.
-  Time since last request: 21121.799915 seconds.
-  path: Packages/com.meta.xr.mrutilitykit/Core/Textures/UI/mruk_common_icons.png
-  artifactKey: Guid(5bfa77e9219036c4baa0a195dae2a44f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Packages/com.meta.xr.mrutilitykit/Core/Textures/UI/mruk_common_icons.png using Guid(5bfa77e9219036c4baa0a195dae2a44f) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
-[PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
- -> (artifact id: '830d044dd63bbdcf22aac9579482d2dc') in 2.353113 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 8
-========================================================================
-Received Import Request.
-  Time since last request: 0.001408 seconds.
-  path: Packages/com.meta.xr.sdk.core/Editor/Icons/sdk_Icons/mruk_icon.png
-  artifactKey: Guid(7f2f1630804cf8f4f95b8fd34f9db045) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Packages/com.meta.xr.sdk.core/Editor/Icons/sdk_Icons/mruk_icon.png using Guid(7f2f1630804cf8f4f95b8fd34f9db045) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
-[PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
- -> (artifact id: '76eeb2173c99a1400d3f0fb9f377f5c3') in 0.038985 seconds
+  Time since last request: 1194823.442183 seconds.
+  path: Assets/Materials/Floors/Laminate Flooring Brown/laminate-flooring-brown_albedo.png
+  artifactKey: Guid(6488dd964dff6b14a9024c2487ef4cca) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Materials/Floors/Laminate Flooring Brown/laminate-flooring-brown_albedo.png using Guid(6488dd964dff6b14a9024c2487ef4cca) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 24 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 24 workers.
+ -> (artifact id: '89549d8ca00cf7daa50b3daab7656b03') in 0.759935 seconds
 Number of updated asset objects reloaded before import = 0
 Number of asset objects unloaded after import = 2
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000140 seconds.
-  path: Packages/com.meta.xr.mrutilitykit/Core/InspectedData/MRUKInspectedData.asset
-  artifactKey: Guid(77088e58ea680884d9b11e7455ce0456) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Packages/com.meta.xr.mrutilitykit/Core/InspectedData/MRUKInspectedData.asset using Guid(77088e58ea680884d9b11e7455ce0456) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
- -> (artifact id: 'f8a315632021f2bc81d99cf802e45f72') in 0.061090 seconds
+  Time since last request: 353.041924 seconds.
+  path: Assets/Materials/Walls/Girly Wall/Girly Wall.png
+  artifactKey: Guid(b5629cf13d79de446ba0a8487951dbf8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Materials/Walls/Girly Wall/Girly Wall.png using Guid(b5629cf13d79de446ba0a8487951dbf8) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 24 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 24 workers.
+ -> (artifact id: '88d4df11d324c55880da29531bef00f6') in 0.098167 seconds
 Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 1
-========================================================================
-Received Import Request.
-  Time since last request: 0.000022 seconds.
-  path: Packages/com.meta.xr.mrutilitykit/Core/Materials/MRUKLit.mat
-  artifactKey: Guid(83c5f3946340c0e4ca684523c367b35a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Packages/com.meta.xr.mrutilitykit/Core/Materials/MRUKLit.mat using Guid(83c5f3946340c0e4ca684523c367b35a) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
-[PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
- -> (artifact id: '985e6e7a6af07d794049adf24c0ce904') in 3.425062 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 22
+Number of asset objects unloaded after import = 2
 ========================================================================
 Received Prepare
 Caller must complete domain reload
 Begin MonoManager ReloadAssembly
 Symbol file LoadedFromMemory is not a mono symbol file
-- Loaded All Assemblies, in  4.535 seconds
-Native extension for LinuxStandalone target not found
+- Loaded All Assemblies, in  0.986 seconds
 Native extension for WindowsStandalone target not found
 Native extension for Android target not found
 [Package Manager] Server::EnsureServerProcessIsRunning -- launch failed, reason: Unity was launched with the -noUpm command-line argument
@@ -329,50 +271,50 @@ Mono: successfully reloaded assembly
 [Package Manager] Server::EnsureServerProcessIsRunning -- launch failed, reason: Unity was launched with the -noUpm command-line argument
 [Package Manager] UpmClient::Send -- Unable to send message (not connected to UPM process).
 [Package Manager] Cannot connect to Unity Package Manager local server
-- Finished resetting the current domain, in  4.809 seconds
-Domain Reload Profiling: 9338ms
-	BeginReloadAssembly (2919ms)
+- Finished resetting the current domain, in  2.013 seconds
+Domain Reload Profiling: 2990ms
+	BeginReloadAssembly (318ms)
 		ExecutionOrderSort (0ms)
-		DisableScriptedObjects (157ms)
+		DisableScriptedObjects (9ms)
 		BackupInstance (0ms)
-		ReleaseScriptingObjects (3ms)
-		CreateAndSetChildDomain (1836ms)
-	RebuildCommonClasses (44ms)
-	RebuildNativeTypeToScriptingClass (14ms)
-	initialDomainReloadingComplete (45ms)
-	LoadAllAssembliesAndSetupDomain (1505ms)
-		LoadAssemblies (1633ms)
+		ReleaseScriptingObjects (0ms)
+		CreateAndSetChildDomain (156ms)
+	RebuildCommonClasses (31ms)
+	RebuildNativeTypeToScriptingClass (11ms)
+	initialDomainReloadingComplete (41ms)
+	LoadAllAssembliesAndSetupDomain (574ms)
+		LoadAssemblies (630ms)
 		RebuildTransferFunctionScriptingTraits (0ms)
-		AnalyzeDomain (114ms)
-			TypeCache.Refresh (52ms)
+		AnalyzeDomain (38ms)
+			TypeCache.Refresh (10ms)
 				TypeCache.ScanAssembly (0ms)
-			ScanForSourceGeneratedMonoScriptInfo (1ms)
-			ResolveRequiredComponents (59ms)
-	FinalizeReload (4810ms)
+			ScanForSourceGeneratedMonoScriptInfo (0ms)
+			ResolveRequiredComponents (26ms)
+	FinalizeReload (2013ms)
 		ReleaseScriptCaches (0ms)
 		RebuildScriptCaches (0ms)
-		SetupLoadedEditorAssemblies (2184ms)
+		SetupLoadedEditorAssemblies (844ms)
 			LogAssemblyErrors (0ms)
-			InitializePlatformSupportModulesInManaged (89ms)
-			SetLoadedEditorAssemblies (424ms)
+			InitializePlatformSupportModulesInManaged (22ms)
+			SetLoadedEditorAssemblies (6ms)
 			RefreshPlugins (0ms)
-			BeforeProcessingInitializeOnLoad (326ms)
-			ProcessInitializeOnLoadAttributes (1161ms)
-			ProcessInitializeOnLoadMethodAttributes (170ms)
+			BeforeProcessingInitializeOnLoad (136ms)
+			ProcessInitializeOnLoadAttributes (589ms)
+			ProcessInitializeOnLoadMethodAttributes (79ms)
 			AfterProcessingInitializeOnLoad (11ms)
-			EditorAssembliesLoaded (3ms)
+			EditorAssembliesLoaded (0ms)
 		ExecutionOrderSort2 (0ms)
-		AwakeInstancesAfterBackupRestoration (36ms)
+		AwakeInstancesAfterBackupRestoration (19ms)
 Shader 'Meta/MRUK/Scene/HighlightsAndShadows': fallback shader 'Off' not found
 Shader 'Oculus/OVRMRCameraFrameLit': fallback shader 'Alpha-Diffuse' not found
 Shader 'Meta/MRUK/Scene/HighlightsAndShadows': fallback shader 'Off' not found
 Shader 'Oculus/OVRMRCameraFrameLit': fallback shader 'Alpha-Diffuse' not found
-Refreshing native plugins compatible for Editor in 29.88 ms, found 13 plugins.
-Preloading 3 native plugins for Editor in 2.37 ms.
+Refreshing native plugins compatible for Editor in 19.04 ms, found 13 plugins.
+Preloading 3 native plugins for Editor in 0.19 ms.
 Unloading 8759 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 152 unused Assets / (13.1 MB). Loaded Objects now: 9431.
-Memory consumption went from 306.4 MB to 293.3 MB.
-Total: 24.168600 ms (FindLiveObjects: 1.593900 ms CreateObjectMapping: 1.932400 ms MarkObjects: 14.315100 ms  DeleteObjects: 6.324600 ms)
+Unloading 153 unused Assets / (13.5 MB). Loaded Objects now: 9345.
+Memory consumption went from 302.5 MB to 289.1 MB.
+Total: 8.397000 ms (FindLiveObjects: 0.623900 ms CreateObjectMapping: 0.234800 ms MarkObjects: 4.909200 ms  DeleteObjects: 2.628000 ms)
 
 Prepare: number of updated asset objects reloaded= 0
 AssetImportParameters requested are different than current active one (requested -> active):
@@ -384,94 +326,177 @@ AssetImportParameters requested are different than current active one (requested
   custom:AudioImporter_EditorPlatform: d09bf68614088b80899f8185d706f6e7 -> 
   custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
   custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-  custom:video-codec-MediaFoundation-h265: 746d11721c4dcdbdad8f713fa42b33f4 -> 
   custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
   custom:CustomObjectIndexerAttribute: 72b91833f83ae208fae7752999fa3104 -> 
   custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
   custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
 ========================================================================
+Received Prepare
+Caller must complete domain reload
+Begin MonoManager ReloadAssembly
+Symbol file LoadedFromMemory is not a mono symbol file
+- Loaded All Assemblies, in  0.964 seconds
+Native extension for WindowsStandalone target not found
+Native extension for Android target not found
+[Package Manager] Server::EnsureServerProcessIsRunning -- launch failed, reason: Unity was launched with the -noUpm command-line argument
+[Package Manager] UpmClient::Send -- Unable to send message (not connected to UPM process).
+[Package Manager] Cannot connect to Unity Package Manager local server
+[Package Manager] Server::EnsureServerProcessIsRunning -- launch failed, reason: Unity was launched with the -noUpm command-line argument
+[Package Manager] UpmClient::Send -- Unable to send message (not connected to UPM process).
+[Package Manager] Cannot connect to Unity Package Manager local server
+System.Reflection.TargetInvocationException: Exception has been thrown by the target of an invocation. ---> System.NullReferenceException: Object reference not set to an instance of an object
+  at Unity.XR.Oculus.OculusLoader.AssetPathToAbsolutePath (System.String assetPath) [0x0003d] in .\Library\PackageCache\com.unity.xr.oculus@4.2.0\Runtime\OculusLoader.cs:298 
+  at Unity.XR.Oculus.OculusLoader.EditorLoadOVRPlugin () [0x0008c] in .\Library\PackageCache\com.unity.xr.oculus@4.2.0\Runtime\OculusLoader.cs:283 
+  at (wrapper managed-to-native) System.Reflection.RuntimeMethodInfo.InternalInvoke(System.Reflection.RuntimeMethodInfo,object,object[],System.Exception&)
+  at System.Reflection.RuntimeMethodInfo.Invoke (System.Object obj, System.Reflection.BindingFlags invokeAttr, System.Reflection.Binder binder, System.Object[] parameters, System.Globalization.CultureInfo culture) [0x0006a] in <8ce0bd04a7a04b4b9395538239d3fdd8>:0 
+   --- End of inner exception stack trace ---
+  at System.Reflection.RuntimeMethodInfo.Invoke (System.Object obj, System.Reflection.BindingFlags invokeAttr, System.Reflection.Binder binder, System.Object[] parameters, System.Globalization.CultureInfo culture) [0x00083] in <8ce0bd04a7a04b4b9395538239d3fdd8>:0 
+  at System.Reflection.MethodBase.Invoke (System.Object obj, System.Object[] parameters) [0x00000] in <8ce0bd04a7a04b4b9395538239d3fdd8>:0 
+  at UnityEditor.EditorAssemblies.ProcessInitializeOnLoadMethodAttributes () [0x000a5] in <50e19b0ed93a4256b2e454b4acec2d48>:0 
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:LogError (object)
+UnityEditor.EditorAssemblies:ProcessInitializeOnLoadMethodAttributes ()
+
+Mono: successfully reloaded assembly
+[Package Manager] Server::EnsureServerProcessIsRunning -- launch failed, reason: Unity was launched with the -noUpm command-line argument
+[Package Manager] UpmClient::Send -- Unable to send message (not connected to UPM process).
+[Package Manager] Cannot connect to Unity Package Manager local server
+- Finished resetting the current domain, in  2.102 seconds
+Domain Reload Profiling: 3056ms
+	BeginReloadAssembly (182ms)
+		ExecutionOrderSort (0ms)
+		DisableScriptedObjects (4ms)
+		BackupInstance (0ms)
+		ReleaseScriptingObjects (0ms)
+		CreateAndSetChildDomain (49ms)
+	RebuildCommonClasses (31ms)
+	RebuildNativeTypeToScriptingClass (12ms)
+	initialDomainReloadingComplete (68ms)
+	LoadAllAssembliesAndSetupDomain (659ms)
+		LoadAssemblies (484ms)
+		RebuildTransferFunctionScriptingTraits (0ms)
+		AnalyzeDomain (265ms)
+			TypeCache.Refresh (186ms)
+				TypeCache.ScanAssembly (160ms)
+			ScanForSourceGeneratedMonoScriptInfo (51ms)
+			ResolveRequiredComponents (26ms)
+	FinalizeReload (2102ms)
+		ReleaseScriptCaches (0ms)
+		RebuildScriptCaches (0ms)
+		SetupLoadedEditorAssemblies (804ms)
+			LogAssemblyErrors (0ms)
+			InitializePlatformSupportModulesInManaged (20ms)
+			SetLoadedEditorAssemblies (5ms)
+			RefreshPlugins (0ms)
+			BeforeProcessingInitializeOnLoad (136ms)
+			ProcessInitializeOnLoadAttributes (554ms)
+			ProcessInitializeOnLoadMethodAttributes (79ms)
+			AfterProcessingInitializeOnLoad (10ms)
+			EditorAssembliesLoaded (0ms)
+		ExecutionOrderSort2 (0ms)
+		AwakeInstancesAfterBackupRestoration (17ms)
+Shader 'Meta/MRUK/Scene/HighlightsAndShadows': fallback shader 'Off' not found
+Shader 'Oculus/OVRMRCameraFrameLit': fallback shader 'Alpha-Diffuse' not found
+Shader 'Meta/MRUK/Scene/HighlightsAndShadows': fallback shader 'Off' not found
+Shader 'Oculus/OVRMRCameraFrameLit': fallback shader 'Alpha-Diffuse' not found
+Refreshing native plugins compatible for Editor in 19.01 ms, found 13 plugins.
+Preloading 3 native plugins for Editor in 0.16 ms.
+Unloading 8777 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 160 unused Assets / (13.5 MB). Loaded Objects now: 9362.
+Memory consumption went from 303.7 MB to 290.2 MB.
+Total: 9.847800 ms (FindLiveObjects: 0.776300 ms CreateObjectMapping: 0.269300 ms MarkObjects: 5.388900 ms  DeleteObjects: 3.411500 ms)
+
+Prepare: number of updated asset objects reloaded= 0
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:scripting/monoscript/fileName/SketchfabImporterWindow.cs: e033d49dd18bd7acecc9a08cbd5e7f64 -> 
+  custom:scripting/monoscript/fileName/SketchfabApi.cs: d8e25357dbae427805b6693cb23d7b96 -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:scripting/monoscript/fileName/Resizer.cs: 0d8c9844c44a9da009572f975ba7f40b -> 
+  custom:scripting/monoscript/fileName/SketchfabModelWindow.cs: 12e26065952d174d5eab2da2c013d2e1 -> 
+  custom:scripting/precompiled-assembly-types:GLTFSerialization: b24483c4e620916e34ac00744bf4e781 -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:SearchIndexIgnoredProperties: e643bd26f0fe6173181afceb89e7c659 -> 
+  custom:AudioImporter_EditorPlatform: d09bf68614088b80899f8185d706f6e7 -> 
+  custom:scripting/monoscript/fileName/SketchfabLogger.cs: 7b6cca873491cd3a233deb85e4c0bc15 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:scripting/monoscript/fileName/SketchfabUI.cs: 713424e062a40db4ff9f340a54a3f75d -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:scripting/precompiled-assembly-types:Assembly-CSharp: e5389479aa24721f9bed752d0d5a0614 -> 27d7843aeb9981469929ef5cafb0c775
+  custom:scripting/monoscript/fileName/SketchfabBrowserManager.cs: 58045900bcc0ea9411b0a211696ee59b -> 
+  custom:scripting/monoscript/fileName/SketchfabImporter.cs: 9e76ddd789c0c8770617987be20c09cd -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:CustomObjectIndexerAttribute: 72b91833f83ae208fae7752999fa3104 -> 
+  custom:scripting/monoscript/fileName/SketchfabExporter.cs: 193dea1e6554dc5211188980f689acec -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:scripting/precompiled-assembly-types:SketchfabPlugin: 5079291b644e0c6bb6117de5c68b6a40 -> 
+  custom:scripting/precompiled-assembly-types:Ionic.Zip.Unity: 3a802d8e48f75e455c0cae5e0511875e -> 
+  custom:scripting/monoscript/fileName/SketchfabBrowserWindow.cs: 758c656e608d3a2525b8440f4f2d0726 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:scripting/monoscript/fileName/SketchfabPlugin.cs: 516f7c272b96363c033bc17962f26f4d -> 
+========================================================================
 Received Import Request.
-  Time since last request: 206.599234 seconds.
-  path: Packages/com.meta.xr.mrutilitykit/Editor/BuildingBlocks/EffectMesh/EffectMesh.asset
-  artifactKey: Guid(824f68961c8f9d84abea43bc520ef34b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Packages/com.meta.xr.mrutilitykit/Editor/BuildingBlocks/EffectMesh/EffectMesh.asset using Guid(824f68961c8f9d84abea43bc520ef34b) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
- -> (artifact id: 'f8452d8bc40026946f68da49c86bcf5a') in 0.695891 seconds
+  Time since last request: 1691.449375 seconds.
+  path: Assets/Import/meshes/urtain_Curtain_0_0_0.asset
+  artifactKey: Guid(83abdb1c1f328c543938fddab4fd91b7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Import/meshes/urtain_Curtain_0_0_0.asset using Guid(83abdb1c1f328c543938fddab4fd91b7) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 24 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 24 workers.
+ -> (artifact id: '59d62421160d7c43b93b9422f9c8cdf2') in 0.121779 seconds
 Number of updated asset objects reloaded before import = 0
 Number of asset objects unloaded after import = 2
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000182 seconds.
-  path: Packages/com.meta.xr.mrutilitykit/Core/Tools/Deprecated/EffectMesh_Deprecated.prefab
-  artifactKey: Guid(cee191920b8eb41b0960b1082a393a3e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Packages/com.meta.xr.mrutilitykit/Core/Tools/Deprecated/EffectMesh_Deprecated.prefab using Guid(cee191920b8eb41b0960b1082a393a3e) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
- -> (artifact id: '18e672a3f9732d529ff48c1b3ab10c2f') in 0.002104 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 0
-========================================================================
-Received Import Request.
-  Time since last request: 0.000055 seconds.
-  path: Packages/com.unity.visualeffectgraph/Tests/Runtime/Unity.VisualEffectGraph.Runtime.Tests.asmdef
-  artifactKey: Guid(4efc780901275194582067357ece5e4b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Packages/com.unity.visualeffectgraph/Tests/Runtime/Unity.VisualEffectGraph.Runtime.Tests.asmdef using Guid(4efc780901275194582067357ece5e4b) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
- -> (artifact id: '269f80928533c5903f7422bdde88970c') in 0.002673 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 0
-========================================================================
-Received Import Request.
-  Time since last request: 0.000038 seconds.
-  path: Packages/com.unity.visualeffectgraph/Tests/Editor/Unity.VisualEffectGraph.Editor.Tests.asmdef
-  artifactKey: Guid(0377f9a54f8f24f459589f04edd75c20) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Packages/com.unity.visualeffectgraph/Tests/Editor/Unity.VisualEffectGraph.Editor.Tests.asmdef using Guid(0377f9a54f8f24f459589f04edd75c20) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
- -> (artifact id: 'd006bf864b377a56a24c6fcf955e0b7b') in 0.002525 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 0
-========================================================================
-Received Import Request.
-  Time since last request: 0.000028 seconds.
-  path: Packages/com.meta.xr.mrutilitykit/Editor/BuildingBlocks/EffectMesh/Textures/effectMesh.png
-  artifactKey: Guid(0ff624bc672ccb747bc6de18bf390568) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Packages/com.meta.xr.mrutilitykit/Editor/BuildingBlocks/EffectMesh/Textures/effectMesh.png using Guid(0ff624bc672ccb747bc6de18bf390568) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
-[PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
- -> (artifact id: '8e332fee3abd6aad7dfeef7f8545a915') in 0.123862 seconds
+  Time since last request: 153.869760 seconds.
+  path: Assets/3D Models/Desk/textures/Ambient_Occlusion_Map_from_Mesh_Material__.png
+  artifactKey: Guid(49a4923315d37234793b44d502171d2f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/3D Models/Desk/textures/Ambient_Occlusion_Map_from_Mesh_Material__.png using Guid(49a4923315d37234793b44d502171d2f) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 24 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 24 workers.
+ -> (artifact id: 'bd1ca6f463bf04d510100f22508200c8') in 0.067881 seconds
 Number of updated asset objects reloaded before import = 0
 Number of asset objects unloaded after import = 2
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000029 seconds.
-  path: Packages/com.meta.xr.sdk.interaction/Runtime/Prefabs/Locomotion/TunnelingEffect.prefab
-  artifactKey: Guid(704aaafc8c443aa4885edd487063cea3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Packages/com.meta.xr.sdk.interaction/Runtime/Prefabs/Locomotion/TunnelingEffect.prefab using Guid(704aaafc8c443aa4885edd487063cea3) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
- -> (artifact id: '1f64c288b101c8246298f1881cee0d44') in 0.005858 seconds
+  Time since last request: 0.000023 seconds.
+  path: Assets/3D Models/Desk/textures/Desk_Desk_Roughness.png
+  artifactKey: Guid(2efe7d751284eea48bd1775a0c04e8d4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/3D Models/Desk/textures/Desk_Desk_Roughness.png using Guid(2efe7d751284eea48bd1775a0c04e8d4) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 24 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 24 workers.
+ -> (artifact id: '19f59d4ab6ccf7bb39ea81a36192c453') in 0.066815 seconds
 Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 0
+Number of asset objects unloaded after import = 2
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000030 seconds.
-  path: Packages/com.unity.visualeffectgraph/Editor/Unity.VisualEffectGraph.Editor.asmdef
-  artifactKey: Guid(116a4d4dbf5c04973bbf517077a062a1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Packages/com.unity.visualeffectgraph/Editor/Unity.VisualEffectGraph.Editor.asmdef using Guid(116a4d4dbf5c04973bbf517077a062a1) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
- -> (artifact id: 'b8b4a560f4333062f3cd035bfff0d9f4') in 0.002990 seconds
+  Time since last request: 0.000037 seconds.
+  path: Assets/3D Models/Desk/textures/Desk_Desk_Normal.png
+  artifactKey: Guid(a04f223ed18f71c4bb7f359726e20e31) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/3D Models/Desk/textures/Desk_Desk_Normal.png using Guid(a04f223ed18f71c4bb7f359726e20e31) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 24 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 24 workers.
+ -> (artifact id: '306591b7cc376516a44c1e8be70bf115') in 0.075978 seconds
 Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 0
+Number of asset objects unloaded after import = 2
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000040 seconds.
-  path: Packages/com.meta.xr.sdk.interaction/Runtime/Sample/Prefabs/RippleCursorEffect.prefab
-  artifactKey: Guid(614e8ae723b436946849b9b54487d3ea) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Packages/com.meta.xr.sdk.interaction/Runtime/Sample/Prefabs/RippleCursorEffect.prefab using Guid(614e8ae723b436946849b9b54487d3ea) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
- -> (artifact id: '610b44d8c7f445a23f0fea5a656a5f1b') in 0.003501 seconds
+  Time since last request: 0.000031 seconds.
+  path: Assets/3D Models/Desk/textures/Desk_Desk_Metallic.png
+  artifactKey: Guid(4cd440376975c6d4180704709f299897) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/3D Models/Desk/textures/Desk_Desk_Metallic.png using Guid(4cd440376975c6d4180704709f299897) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 24 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 24 workers.
+ -> (artifact id: '526b3bf9aca8e70e1f42eba8d8c8f9b7') in 0.038496 seconds
 Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 0
+Number of asset objects unloaded after import = 2
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000028 seconds.
-  path: Packages/com.meta.xr.sdk.interaction/Runtime/Materials/TunnelingEffect.mat
-  artifactKey: Guid(4586bbc8f000620428a7a2c0ff17013b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Packages/com.meta.xr.sdk.interaction/Runtime/Materials/TunnelingEffect.mat using Guid(4586bbc8f000620428a7a2c0ff17013b) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
-[PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
- -> (artifact id: 'dea73252811a7c074d2896671f8843bf') in 0.440547 seconds
+  Time since last request: 0.000025 seconds.
+  path: Assets/3D Models/Desk/textures/Desk_Desk_BaseColor.png
+  artifactKey: Guid(f9a134133dfe8c44c9f492a5846b0d61) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/3D Models/Desk/textures/Desk_Desk_BaseColor.png using Guid(f9a134133dfe8c44c9f492a5846b0d61) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 24 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 24 workers.
+ -> (artifact id: 'c142fe1adfc9ab14dd53ad64c5d9e99d') in 0.041702 seconds
 Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 21
+Number of asset objects unloaded after import = 2
 Editor requested this worker to shutdown with reason: Scaling down because of idle timeout
 TcpMessagingSession - receive error: operation aborted. errorcode: 995, details: The I/O operation has been aborted because of either a thread exit or an application request.
 AssetImportWorker is now disconnected from the server
