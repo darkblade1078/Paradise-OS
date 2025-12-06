@@ -16,13 +16,11 @@ public class ButtonInteraction : MonoBehaviour
     public void OnButtonPress()
     {
         if (buttonSource != null && buttonClip != null)
-        {
             buttonSource.PlayOneShot(buttonClip);
-        }
+
+
         // Notify the manager to play this button's dialogue
         if (interactionManager != null)
-        {
             interactionManager.PlayButtonDialogue(this);
-        }
     }
 }

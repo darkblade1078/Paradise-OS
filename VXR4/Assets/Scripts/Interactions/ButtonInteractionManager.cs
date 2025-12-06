@@ -9,11 +9,8 @@ public class ButtonInteractionManager : MonoBehaviour
     public ButtonInteraction redButton;
     public ButtonInteraction blueButton;
 
-    [Header("Speaker Audio Source")]
-    public AudioSource speakerSource;
-
-    [Header("Intro Dialogue")]
-    public DialogueBlock introBlock;
+    [Header("Intro Dialogue Block")]
+    public DialogueBlock dialogueBlock;
 
     [Header("WYR Block")]
     public WYRBlock wYRBlock;
@@ -21,40 +18,35 @@ public class ButtonInteractionManager : MonoBehaviour
     [Header("Events")]
     public List<GameObject> actionObjects;
 
-    private bool introPlayed = false;
+    [Header("Speaker Audio Source")]
+    public AudioSource speakerSource;
+
     private bool waitingForButton = false;
     private ButtonInteraction lastButtonPressed;
 
     private void Awake()
     {
-        // Play intro dialogue first, then wait for button press to start WYR block
-        if (introBlock != null && introBlock.voiceClips != null && introBlock.voiceClips.Length > 0 && !introPlayed)
-            StartCoroutine(PlayIntroCoroutine());
-    }
-
-    private IEnumerator PlayIntroCoroutine()
-    {
-        introPlayed = true;
-        for (int i = 0; i < introBlock.voiceClips.Length; i++)
-        {
-            speakerSource.Stop();
-            speakerSource.clip = introBlock.voiceClips[i];
-            speakerSource.Play();
-            yield return new WaitWhile(() => speakerSource.isPlaying);
-        }
-
-        // After intro, set button texts to first WYR block's choices
-        if (wYRBlock != null)
-        {
-            if (blueButton != null && blueButton.buttonText != null)
-                blueButton.buttonText.text = wYRBlock.blueChoice;
-            if (redButton != null && redButton.buttonText != null)
-                redButton.buttonText.text = wYRBlock.redChoice;
-        }
+        // Play intro dialogue block if present
+        if (dialogueBlock != null && dialogueBlock.voiceClips != null)
+            StartCoroutine(PlayDialogueBlock());
 
         StartCoroutine(PlayWYRBlockClipsCoroutine());
     }
 
+    private IEnumerator PlayDialogueBlock()
+    {
+        if (dialogueBlock != null && dialogueBlock.voiceClips != null)
+        {
+            for (int i = 0; i < dialogueBlock.voiceClips.Length; i++)
+            {
+                speakerSource.Stop();
+                speakerSource.clip = dialogueBlock.voiceClips[i];
+                speakerSource.Play();
+                yield return new WaitWhile(() => speakerSource.isPlaying);
+            }
+        }
+    }
+    
     private IEnumerator PlayWYRBlockClipsCoroutine()
     {
         // Reset both buttons' text color to white at the start of WYR block
