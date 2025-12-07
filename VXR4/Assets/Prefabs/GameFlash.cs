@@ -5,7 +5,7 @@ using UnityEngine.UI;
 public class GameOverScript : MonoBehaviour
 {
     [SerializeField] private Image image;
-    [SerializeField] private float holdTime = .2f;
+    [SerializeField] private float holdTime = .6f;
     [SerializeField] private float fadeTime = 3f;
 
     void Start()

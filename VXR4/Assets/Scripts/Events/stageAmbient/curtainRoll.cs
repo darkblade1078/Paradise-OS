@@ -28,7 +28,7 @@ public class curtainRoll : MonoBehaviour
 
     IEnumerator RiseCurtain()
     {
-        yield return new WaitForSeconds(3f);
+        yield return new WaitForSeconds(8f);
 
         StartCoroutine(LightsAndSfx());
 

@@ -491,6 +491,7 @@
 "Assets/Scripts/Events/stageAmbient/audienceCheerManager.cs"
 "Assets/Scripts/Events/stageAmbient/audienceNoises.cs"
 "Assets/Scripts/Events/stageAmbient/curtainRoll.cs"
+"Assets/Scripts/Interactions/Blow.cs"
 "Assets/Scripts/Interactions/ButtonInteraction.cs"
 "Assets/Scripts/Interactions/ButtonInteractionManager.cs"
 "Assets/Scripts/Interactions/Strum.cs"
