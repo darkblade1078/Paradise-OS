@@ -1,0 +1,11 @@
+Model Information:
+* title:	Cinema Movie Projector AP5 - 1961
+* source:	https://sketchfab.com/3d-models/cinema-movie-projector-ap5-1961-6ea63a63e75149fcaea83026451bf479
+* author:	NANO (https://sketchfab.com/NanoGames)
+
+Model License:
+* license type:	CC-BY-NC-4.0 (http://creativecommons.org/licenses/by-nc/4.0/)
+* requirements:	Author must be credited. No commercial use.
+
+If you use this 3D model in your project be sure to copy paste this credit wherever you share it:
+This work is based on "Cinema Movie Projector AP5 - 1961" (https://sketchfab.com/3d-models/cinema-movie-projector-ap5-1961-6ea63a63e75149fcaea83026451bf479) by NANO (https://sketchfab.com/NanoGames) licensed under CC-BY-NC-4.0 (http://creativecommons.org/licenses/by-nc/4.0/)
