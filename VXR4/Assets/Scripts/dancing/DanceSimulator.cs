@@ -63,6 +63,7 @@ public class DanceSimulator : MonoBehaviour
         {
             yield return new WaitForSeconds(coachIntroClip.length);
         }
+
         PlayCrowdBattleLoop();
         if (musicAudioSource != null && danceSong != null)
         {
@@ -70,6 +71,7 @@ public class DanceSimulator : MonoBehaviour
             musicAudioSource.loop = false; // Do not loop the music
             musicAudioSource.Play();
         }
+        
         StartCoroutine(DanceBattleRoutine());
     }
     void PlayCrowdIdleLoop()

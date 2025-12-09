@@ -7,7 +7,7 @@ public class SaveManager : MonoBehaviour
 {
     public static SaveManager instance;
 
-        private SaveData saveData;
+    private SaveData saveData;
 
     private void Awake()
     {
@@ -53,53 +53,19 @@ public class SaveManager : MonoBehaviour
             SceneManager.LoadScene(saveData.currentScene);
         }
     }
-
-    public void ChangeWYRRoomCompletionStatus(bool status)
-    {
-        if (saveData != null)
-        {
-            saveData.hasCompletedWYrRoom = status;
-            SaveSystem.SaveGame(saveData);
-        }
-    }
-
-    public void ChangeRoom1CompletionStatus(bool status)
-    {
-        if (saveData != null)
-        {
-            saveData.hasCompletedRoom1 = status;
-            SaveSystem.SaveGame(saveData);
-        }
-    }
-
-    public void ChangeRoom2CompletionStatus(bool status)
-    {
-        if (saveData != null)
-        {
-            saveData.hasCompletedRoom2 = status;
-            SaveSystem.SaveGame(saveData);
-        }
-    }
-
-    public void ChangeRoom3CompletionStatus(bool status)
-    {
-        if (saveData != null)
-        {
-            saveData.hasCompletedRoom3 = status;
-            SaveSystem.SaveGame(saveData);
-        }
-    }
-
-    public void ChangeHadBeatenGameStatus(bool status)
-    {
-        if (saveData != null)
-        {
-            saveData.hadBeatenGame = status;
-            SaveSystem.SaveGame(saveData);
-        }
-    }
+    
     public SaveData GetSaveData()
     {
         return saveData;
+    }
+
+    public void GoToNextScene()
+    {
+        if (saveData != null)
+        {
+            saveData.currentScene += 1;
+            SaveCurrentData();
+            SceneManager.LoadScene(saveData.currentScene);
+        }
     }
 }
