@@ -1,0 +1,11 @@
+Model Information:
+* title:	VR Cinema Environment
+* source:	https://sketchfab.com/3d-models/vr-cinema-environment-f279fb80080f41cfbbf1784339ed1f14
+* author:	fangzhangmnm (https://sketchfab.com/fangzhangmnm)
+
+Model License:
+* license type:	CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)
+* requirements:	Author must be credited. Commercial use is allowed.
+
+If you use this 3D model in your project be sure to copy paste this credit wherever you share it:
+This work is based on "VR Cinema Environment" (https://sketchfab.com/3d-models/vr-cinema-environment-f279fb80080f41cfbbf1784339ed1f14) by fangzhangmnm (https://sketchfab.com/fangzhangmnm) licensed under CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)
