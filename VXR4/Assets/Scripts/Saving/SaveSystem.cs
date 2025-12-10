@@ -11,9 +11,7 @@ public static class SaveSystem
         string path = Application.persistentDataPath + "/savefile.sav";
         FileStream stream = new FileStream(path, FileMode.Create);
 
-        SaveData saveData = new SaveData();
-
-        formatter.Serialize(stream, saveData);
+        formatter.Serialize(stream, data);
 
         stream.Close();
     }

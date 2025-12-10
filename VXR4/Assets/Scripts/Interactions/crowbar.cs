@@ -68,6 +68,7 @@ public class crowbar : MonoBehaviour
                 Glass1.SetActive(false);
                 Glass2.SetActive(false);
                 Glass3.SetActive(false);
+                voiceclip3.Play();
                 blackScreen.SetActive(true);
                 StartCoroutine(endScene());
                 break;
@@ -79,8 +80,7 @@ public class crowbar : MonoBehaviour
 
     IEnumerator endScene()
     {
-        voiceclip3.Play();
-        yield return new WaitForSeconds(1f);
+        yield return new WaitForSeconds(5f);
         saveManager.GotoNextScene();
     }
 }
