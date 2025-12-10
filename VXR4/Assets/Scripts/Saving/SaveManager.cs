@@ -7,7 +7,7 @@ public class SaveManager : MonoBehaviour
 {
     public static SaveManager instance;
 
-        private SaveData saveData;
+    private SaveData saveData;
 
     private void Awake()
     {
@@ -57,6 +57,15 @@ public class SaveManager : MonoBehaviour
     public SaveData GetSaveData()
     {
         return saveData;
+    }
+
+    public setupNextScene()
+    {
+        if (saveData != null)
+        {
+            saveData.currentScene += 1;
+            SaveCurrentData();
+        }
     }
 
     public void GotoNextScene()
