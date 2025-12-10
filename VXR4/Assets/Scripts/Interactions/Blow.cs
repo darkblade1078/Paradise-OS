@@ -18,15 +18,27 @@ public class Blowing : MonoBehaviour
         if (other.CompareTag("head"))
         {
             StopAllCoroutines();
+            stopAllSounds();
             
             StartCoroutine(Saxophone());
         }
+    }
+
+    private void stopAllSounds()
+    {
+        note1.Stop();
+        note2.Stop();
+        note3.Stop();
+        note4.Stop();
+        note5.Stop();
+        note6.Stop();
     }
 
     private void OnTriggerExit(Collider other)
     {
         if (other.CompareTag("head"))
         {
+            stopAllSounds();
             StopAllCoroutines();
         }
     }

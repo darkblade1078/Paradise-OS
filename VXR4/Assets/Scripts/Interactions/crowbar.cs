@@ -61,14 +61,13 @@ public class crowbar : MonoBehaviour
                 break;
             case 3:
                 Glass3.SetActive(true);
-                voiceclip2.Play();
+                voiceclip3.Play();
                 break;
 
             case 4:
                 Glass1.SetActive(false);
                 Glass2.SetActive(false);
                 Glass3.SetActive(false);
-                voiceclip3.Play();
                 blackScreen.SetActive(true);
                 StartCoroutine(endScene());
                 break;

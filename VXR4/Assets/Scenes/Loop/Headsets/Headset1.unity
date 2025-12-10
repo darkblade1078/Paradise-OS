@@ -1177,6 +1177,11 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 3418775442100760719, guid: 061a08de7ac71be45987096b19c8c797,
+        type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 83140c3cfb1a1e34e8614e0e36a6de8c, type: 2}
     - target: {fileID: 4805936864757019222, guid: 061a08de7ac71be45987096b19c8c797,
         type: 3}
       propertyPath: m_Name
@@ -1210,6 +1215,10 @@ PrefabInstance:
         type: 3}
       insertIndex: -1
       addedObject: {fileID: 725751092}
+    - targetCorrespondingSourceObject: {fileID: 4805936864757019222, guid: 061a08de7ac71be45987096b19c8c797,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 725751095}
   m_SourcePrefab: {fileID: 100100000, guid: 061a08de7ac71be45987096b19c8c797, type: 3}
 --- !u!1 &725751086 stripped
 GameObject:
@@ -1329,6 +1338,26 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 0.22, y: 0.09, z: 0.16}
   m_Center: {x: 0.00000010058284, y: -0.03, z: -0.07}
+--- !u!23 &725751094 stripped
+MeshRenderer:
+  m_CorrespondingSourceObject: {fileID: 3418775442100760719, guid: 061a08de7ac71be45987096b19c8c797,
+    type: 3}
+  m_PrefabInstance: {fileID: 725751085}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &725751095
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 725751086}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 91eff329e85892a48985d8f965fdf1b7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  targetRenderer: {fileID: 725751094}
+  fadeDuration: 1
 --- !u!1001 &858955545
 PrefabInstance:
   m_ObjectHideFlags: 0

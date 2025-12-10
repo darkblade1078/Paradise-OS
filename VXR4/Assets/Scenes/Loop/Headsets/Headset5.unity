@@ -602,6 +602,11 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 2128624680824655693, guid: 76b4eda4b98c3ca479ce06b0a288fb08,
+        type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 83140c3cfb1a1e34e8614e0e36a6de8c, type: 2}
     - target: {fileID: 2967639670179678089, guid: 76b4eda4b98c3ca479ce06b0a288fb08,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -685,6 +690,10 @@ PrefabInstance:
         type: 3}
       insertIndex: -1
       addedObject: {fileID: 286777714}
+    - targetCorrespondingSourceObject: {fileID: 8091161919724686740, guid: 76b4eda4b98c3ca479ce06b0a288fb08,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1868408752}
   m_SourcePrefab: {fileID: 100100000, guid: 76b4eda4b98c3ca479ce06b0a288fb08, type: 3}
 --- !u!1 &286777708 stripped
 GameObject:
@@ -2039,6 +2048,26 @@ Transform:
   m_Children: []
   m_Father: {fileID: 522768656}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!23 &1868408751 stripped
+MeshRenderer:
+  m_CorrespondingSourceObject: {fileID: 2128624680824655693, guid: 76b4eda4b98c3ca479ce06b0a288fb08,
+    type: 3}
+  m_PrefabInstance: {fileID: 286777707}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1868408752
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 286777708}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 91eff329e85892a48985d8f965fdf1b7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  targetRenderer: {fileID: 1868408751}
+  fadeDuration: 1
 --- !u!1 &1898516176
 GameObject:
   m_ObjectHideFlags: 0
