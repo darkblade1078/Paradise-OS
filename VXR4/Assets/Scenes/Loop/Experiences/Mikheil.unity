@@ -6110,6 +6110,11 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 560014183069458991, guid: 621e45f610d611746802ad828f66b094,
+        type: 3}
+      propertyPath: m_RenderAlignment
+      value: 3
+      objectReference: {fileID: 0}
     - target: {fileID: 560014183069459152, guid: 621e45f610d611746802ad828f66b094,
         type: 3}
       propertyPath: looping
@@ -6148,7 +6153,7 @@ PrefabInstance:
     - target: {fileID: 560014183069459153, guid: 621e45f610d611746802ad828f66b094,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: 0
+      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: 560014183069459153, guid: 621e45f610d611746802ad828f66b094,
         type: 3}
@@ -6158,7 +6163,7 @@ PrefabInstance:
     - target: {fileID: 560014183069459153, guid: 621e45f610d611746802ad828f66b094,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: 18.11
+      value: 22.71
       objectReference: {fileID: 0}
     - target: {fileID: 560014183069459153, guid: 621e45f610d611746802ad828f66b094,
         type: 3}
