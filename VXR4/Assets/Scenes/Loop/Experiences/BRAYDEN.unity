@@ -180,6 +180,21 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 4522263577203155733, guid: b2e3a7c3be7f0bb4cbf41ef940a00099,
+        type: 3}
+      propertyPath: m_Color.b
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4522263577203155733, guid: b2e3a7c3be7f0bb4cbf41ef940a00099,
+        type: 3}
+      propertyPath: m_Color.g
+      value: 0.73170733
+      objectReference: {fileID: 0}
+    - target: {fileID: 4522263577203155733, guid: b2e3a7c3be7f0bb4cbf41ef940a00099,
+        type: 3}
+      propertyPath: m_Color.r
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 4660594253446636210, guid: b2e3a7c3be7f0bb4cbf41ef940a00099,
         type: 3}
       propertyPath: m_LocalRotation.w
