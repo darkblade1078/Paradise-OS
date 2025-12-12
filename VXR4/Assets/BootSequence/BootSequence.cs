@@ -22,6 +22,7 @@ public class BootAnimation : MonoBehaviour
         yield return new WaitForSeconds(7.1f);
         anim.Play("bootAnim");  
         yield return new WaitWhile(()=>sound.isPlaying);
+        yield return new WaitForSeconds(2f);
         saveManager.GotoNextScene();
     }
 }

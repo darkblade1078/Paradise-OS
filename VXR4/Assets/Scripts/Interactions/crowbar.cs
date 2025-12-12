@@ -63,6 +63,9 @@ public class crowbar : MonoBehaviour
                 Glass3.SetActive(true);
                 StartCoroutine(endScene());
                 break;
+            case 4:
+                StartCoroutine(endSceneNOW());
+                break;
             default:
                 break;
         }
@@ -76,7 +79,22 @@ public class crowbar : MonoBehaviour
         Glass2.SetActive(false);
         Glass3.SetActive(false);
         blackScreen.SetActive(true);
-        yield return new WaitForSeconds(.5f);
+        voiceclip1.Stop();
+        voiceclip2.Stop();
+        yield return new WaitForSeconds(1f);
+        saveManager.GotoNextScene();
+    }
+
+    IEnumerator endSceneNOW()
+    {
+        voiceclip1.Stop();
+        voiceclip2.Stop();
+        voiceclip3.Stop();
+        Glass1.SetActive(false);
+        Glass2.SetActive(false);
+        Glass3.SetActive(false);
+        blackScreen.SetActive(true);
+        yield return new WaitForSeconds(1f);
         saveManager.GotoNextScene();
     }
 }
